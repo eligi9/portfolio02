@@ -1,9 +1,9 @@
-import "/css/components/grid/GridItem.scss";
+import styles from"/css/components/grid/GridItem.module.scss";
 import PropTypes from 'prop-types';
 
 GridItem.propTypes = {
   cols: PropTypes.string.isRequired,
-  rows: PropTypes.string.isRequired,
+  rows: PropTypes.string,
   color: PropTypes.string,
   justify: PropTypes.string,
   align: PropTypes.string,
@@ -14,11 +14,11 @@ GridItem.propTypes = {
 
 export default function GridItem({cols, rows, color, justify, align, children, onClick}) {
   const gridItemStyle = {
-    background: color,
-    justifySelf: justify,
-    alignSelf: align,
     gridColumn: cols,
     gridRow: rows,
+    background: color,
+    justifySelf: justify,
+    alignSelf: align, 
     //position: "relative", // Ensures that the text is always on top of everything else
   };
   
@@ -26,7 +26,7 @@ export default function GridItem({cols, rows, color, justify, align, children, o
   return (
     <div
       style={gridItemStyle}
-      className={"grid_item"}
+      className={styles.grid_item}
       onClick={onClick}
     >
         {children}
