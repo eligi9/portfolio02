@@ -1,0 +1,5 @@
+{
+  "projects": ["riss", "lonis weltraumreise", "easy jam"],
+  "defaultProject": "riss",
+  "apiRoot": "/json/projects/$1.json"
+}

@@ -12,7 +12,7 @@ export default function ProjectHeading({project, type}) {
 
   return (
     <>
-    <GridItem cols="2/9" color="red"> 
+    <GridItem cols="2/9"> 
       <Stack gap={0} align='stretch' justify='flex-start'>  
         <h1 style={{textAlign:"left"}} >{project}</h1>
         <h2 style={{textAlign:"left"}} >{type}</h2>

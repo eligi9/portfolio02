@@ -1,0 +1,19 @@
+{
+    "name": "Riss",
+    "version": "1.0.0",
+    "description": "Der Riss markiert die Grenze zwischen zwei Realitäten: einer düsteren, kalten Welt, geerdet in Fakten und einer farbenfrohen, leichtfüßigen Welt. Das Filmprojekt 'Riss' erkundet die Kraft der Emotionen und die Bewegung zwischen diesen unterschiedlichen Sphären. Es beleuchtet den inneren Kampf um Autonomie – die Selbstbestimmung der eigenen Realität.\n\n“Riss” ist ein Filmprojekt in Kooperation mit der Tänzerin Christine Kuckuck das im Rahmen von “Dance, Draw & Dance”, eines fachübergreifendes Semesterkonzepts entstanden ist.\nDas Ergebnis war ein Videoprojekt, bei dem wir eine Verbindung zwischen der reinen Tanzkunst, der filmischen Aufzeichnung und der Erweiterung und Verstärkung der vom Tänzer ausgedrückten Emotionen suchten.",
+    "type": "Film, Animation",
+    "content": {
+        "section1": {
+            "title": "Konzept",
+            "text": "Die Tänzerin entschlüsselt die durch Musik transportierten Emotionen sowie Spannungen und transformiert sie in etwas für uns visuell erfassbares. Dabei werden sowohl die Intensität und Geschwindigkeit der Bewegungen als auch die Nutzung des Raumes berücksichtigt. Im Projekt 'Riss' wird diese Transformation videographisch eingefangen und durch Animation um eine Ebene erweitert, um diese zu verstärken und greifbarer zu machen."
+        },
+
+        "section2": {
+            "title": "Ein Wechselbad der Gefühle",
+            "text": "Die Tänzerin wird immer wieder von guten oder schlechten Gefühlen eingenommen. Dies passiert außerhalb ihrer Kontrolle, aber sie sehnt sich nach den positiven Gefühlen. Dieses Hin und Her wird immer mehr und immer heftiger, bis zum Riss, dem Höhepunkt, in dem die Tänzerin den Kampf um die Kontrolle ihrer Gefühlslage bestreitet."
+        }
+
+
+    }
+}
