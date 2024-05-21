@@ -1,3 +1,5 @@
+@import 'Grid';
+
 
 .grid_container {
   height: 100vh;
@@ -15,10 +17,9 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
-}
 
-.grid_item 
-{
-    min-height: 0;
-    min-width: 0;
+  &.gc_18{
+    grid-template-columns: repeat(18, 1fr);
+  }
+
 }

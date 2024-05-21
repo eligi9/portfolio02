@@ -10,11 +10,11 @@ const theme = createTheme({
 });
 
 let init = ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  //<React.StrictMode>
     <MantineProvider theme={theme}>
       <App />
     </MantineProvider>
-  </React.StrictMode>,
+  //</React.StrictMode>,
 )
 
-window.addEventListener('load', () => {init})
+window.addEventListener('load', () => init)

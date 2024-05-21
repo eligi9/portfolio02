@@ -1,4 +1,4 @@
-import "/grid/grid.scss";
+import "/css/components/grid/GridItem.scss";
 import PropTypes from 'prop-types';
 
 GridItem.propTypes = {
