@@ -1,9 +1,22 @@
 @use 'sass:math';
 
+$comfortaa-font-path: "/fonts/comfortaa";
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$comfortaa-font-path}/Comfortaa-Regular.ttf") format("ttf");
+    font-family: "Comfortaa";
+    font-weight: bold;
+}
+
 $background-color:  #C5EFFC;
 
 $font-family-sans:  Verdana, Helvetica, sans-serif;
 $font-family-serif: "Times New Roman", Times, serif;
+
+$font-family-Comfortaa: "Comfortaa", Times, serif;
+
+$comfortable-line-height: 1.5;
 
 $font-size-base:    3vw;
 $font-size-factor:  1.25;  /* cmp. https://type-scale.com/ */
