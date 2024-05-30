@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 
 import EasyJam from '/components/project/EasyJam'
 import Riss from '/components/project/Riss'
+import { useEffect } from 'react';
 
 
 Project.propTypes = {
@@ -17,6 +18,12 @@ Project.propTypes = {
 export default function Project({type, name}) {
 
   const currentProject = useSelector((state) => state.project.project)
+
+  const resetScrollPos = () => window.scrollTo(0, 0)
+
+  useEffect(() => {
+    resetScrollPos();
+  }, [currentProject])
 
   return (
     <>
