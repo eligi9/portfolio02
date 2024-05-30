@@ -6,24 +6,28 @@ $comfortaa-font-path: "/fonts/comfortaa";
     src: url("#{$comfortaa-font-path}/Comfortaa-Regular.ttf") format("truetype");
     font-family: "Comfortaa-Regular";
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     src: url("#{$comfortaa-font-path}/Comfortaa-Medium.ttf") format("truetype");
     font-family: "Comfortaa-Medium";
     font-weight: 500; // Use the numeric value for 'medium'
+    font-display: swap;
 }
 
 @font-face {
     src: url("#{$comfortaa-font-path}/Comfortaa-Light.ttf") format("truetype");
     font-family: "Comfortaa-Light";
     font-weight: 300; // Use the numeric value for 'light'
+    font-display: swap;
 }
 
 @font-face {
     src: url("#{$comfortaa-font-path}/Comfortaa-Bold.ttf") format("truetype");
     font-family: "Comfortaa-Bold";
     font-weight: 700; // Use the numeric value for 'light'
+    font-display: swap;
 }
 
 $smooth-black:  #181818;
