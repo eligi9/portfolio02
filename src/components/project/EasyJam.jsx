@@ -26,13 +26,8 @@ EasyJam.propTypes = {
 };
 
 export default function EasyJam({currentProject}) {
-  
-  //const currentProjectX = useSelector((state) => state.project.project)
-
 
   return (
-    <>
-     { currentProject.name === "Easy Jam" && 
         <GridContainer cols='9'>
           <ProjectHeading project={currentProject.name} type={currentProject.type}></ProjectHeading>
           <ProjectVideo video={currentProject.video}/>
@@ -53,7 +48,6 @@ export default function EasyJam({currentProject}) {
           <ProjectSection currentSection={currentProject.content.FestlegungGrundton}></ProjectSection>
           <ImageGroup images={[img_quin1, img_quin2]}></ImageGroup>
         </GridContainer>
-     }
-    </>
+
   );
 }

@@ -15,16 +15,15 @@ export default function ProjectVideo({video}) {
   return (
     <>
     <GridItem cols="2/9" justify={"center"}>
-      {loading && <Skeleton className={styles.video} radius="xl" />}
-      <iframe 
-        src={video} 
-        title="YouTube video player"
-        allowFullScreen
-        className={styles.video}
-        onLoad={() => setLoading(false)}
-        style={{ display: loading ? 'none' : 'block'}}
-        
-      ></iframe>
+      <Skeleton className={styles.video} visible={loading}>
+        <iframe 
+          src={video} 
+          title="YouTube video player"
+          allowFullScreen
+          className={styles.video}
+          onLoad={() => setLoading(false)} 
+        ></iframe>
+      </Skeleton>
     </GridItem>
     </>
   )

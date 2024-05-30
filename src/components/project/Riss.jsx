@@ -30,13 +30,9 @@ Riss.propTypes = {
 };
 
 export default function Riss({currentProject}) {
-  
-  //const currentProjectX = useSelector((state) => state.project.project)
 
 
   return (
-    <>
-     { currentProject.name === "Riss" && 
         <GridContainer cols='9'>
           <ProjectHeading project={currentProject.name} type={currentProject.type}></ProjectHeading>
           <ProjectVideo video={currentProject.video}/>
@@ -54,7 +50,6 @@ export default function Riss({currentProject}) {
           <ProjectSection currentSection={currentProject.content.Greenscreening}></ProjectSection>
           <ImageGroup images={[ img11, img12]}></ImageGroup>
         </GridContainer>
-     }
-    </>
+
   );
 }

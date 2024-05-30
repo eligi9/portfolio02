@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 
 import EasyJam from '/components/project/EasyJam'
 import Riss from '/components/project/Riss'
+import LonisWR from '/components/project/LonisWR'
 import { useEffect } from 'react';
 
 
@@ -29,7 +30,7 @@ export default function Project({type, name}) {
     <>
       { currentProject.name === "Easy Jam" && <EasyJam currentProject={currentProject}></EasyJam> }
       { currentProject.name === "Riss" && <Riss currentProject={currentProject}></Riss> }
-      { currentProject.name === "Lonis Weltraumreise" && <Riss currentProject={currentProject}></Riss> }
+      { currentProject.name === "Lonis Weltraumreise" && <LonisWR currentProject={currentProject}/>}
 
     </>
   );
