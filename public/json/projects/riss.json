@@ -1,0 +1,74 @@
+{
+    "name": "Riss",
+    "version": "1.0.0",
+    "description": "Der Riss markiert die Grenze zwischen zwei Realitäten: einer düsteren, kalten Welt, geerdet in Fakten und einer farbenfrohen, leichtfüßigen Welt. Das Filmprojekt 'Riss' erkundet die Kraft der Emotionen und die Bewegung zwischen diesen unterschiedlichen Sphären. Es beleuchtet den inneren Kampf um Autonomie – die Selbstbestimmung der eigenen Realität.\n\n“Riss” ist ein Filmprojekt in Kooperation mit der Tänzerin Christine Kuckuck das im Rahmen von “Dance, Draw & Dance”, eines fachübergreifendes Semesterkonzepts entstanden ist.\nDas Ergebnis war ein Videoprojekt, bei dem wir eine Verbindung zwischen der reinen Tanzkunst, der filmischen Aufzeichnung und der Erweiterung und Verstärkung der vom Tänzer ausgedrückten Emotionen suchten.",
+    "type": "Film, Animation",
+    "video": "https://www.youtube.com/embed/9D5fCz_LJe4?si=muVwKlhOoq2YaVza",
+    "content": {
+        "Konzept": {
+            "title": "Konzept",
+            "part1": {
+                "title": "",
+                "text": "Die Tänzerin entschlüsselt die durch Musik transportierten Emotionen sowie Spannungen und transformiert sie in etwas für uns visuell erfassbares. Dabei werden sowohl die Intensität und Geschwindigkeit der Bewegungen als auch die Nutzung des Raumes berücksichtigt. Im Projekt 'Riss' wird diese Transformation videographisch eingefangen und durch Animation um eine Ebene erweitert, um diese zu verstärken und greifbarer zu machen."
+            },
+            "part2": {
+                "title": "Ein Wechselbad der Gefühle",
+                "text": "Die Tänzerin wird immer wieder von guten oder schlechten Gefühlen eingenommen. Dies passiert außerhalb ihrer Kontrolle, aber sie sehnt sich nach den positiven Gefühlen. Dieses Hin und Her wird immer mehr und immer heftiger, bis zum Riss, dem Höhepunkt, in dem die Tänzerin den Kampf um die Kontrolle ihrer Gefühlslage bestreitet."
+            },
+            "part3": {
+                "title": "Zwei Welten",
+                "text": "Diese zwei Gefühlslagen werden in in zwei Räume aufgeteilt. Des düsteren grauen Allteags und der farbenfrohen Fantasie. Um die düstere Atmosphäre der realen Welt zu unterstreichen, wurde das Setting bewusst in einem Parkhaus platziert. Die kahlen Betonwände im gedimmten Licht vermitteln ein Gefühl der Tristheit und Einsamkeit. Die Traumwelt hingegen soll verspielt und beschwingt erscheinen, als starker Kontrast zur realen Trostlosigkeit. Organische Formen und lebendige Farben sind bewusst gewählt, um eine Atmosphäre der Leichtigkeit und Freude zu schaffen"
+            }
+        },
+    
+        "Musik": {
+            "title": "Musik",
+            "part1": {
+                "title": "Stimmungsphasen",
+                "text": "Verschiedene Musikstücke wurden auf der Basis von Dynamik und Kontrast in Stimmungs-Phasen eingeteilt. Die Einteilung basiert auf der Beschaffenheit der Klänge der einzelnen Instrumente. So wirkt eine stark verzerrte Gitarre eher unruhig und kantig während ein subtil verzerrter Bass warm und gemütlich wirkt"
+            }
+        },
+
+        "Visuelle_Effekte": {
+            "title": "Visuelle Effekte",
+            "part1": {
+                "title": "Bunte Traumwelt durch KI",
+                "text": "Die Animation der grafischen Elemente wurden mithilfe von Stable Diffusion, einem auf KI basierenden Werkzeug, umgesetzt. Auch die Kameraführung der Traumwelt wird über Stable Diffusion gesteuert. Um Einfluss auf die Ausgabe der KI zu nehmen, kann sie mit bestimmten Eingabematerial gefüttert.In unserem Fall besteht die Eingabe aus eigens illustrierten Bildern, welche die von uns angestrebte Form und Farbsprache enthalten. Durch das setzen weiterer Parameter, wie zum Beispiel  X-,Y- und Z-Achsen kann die Kameraführung den eigenen Wünschen angepasst werden."
+            }
+        },
+
+        "Dimension": {
+            "part2": {
+                "title": "Durchdringen der Dimension",
+                "text": "Für den Sprung zwischen den Welten werden häufig Shockwave Effekte verwendet. Diese erwecken den Eindruck eines mit Spannung geladenen Feldes, das Kraft erfordert, um durchdrungen zu werden. Wenn sich die Realität ihren Platz zurückerobert wird häufig mit Bildinterferenzen gearbeitet, die an Bildstörungen an alten TV Geräten erinnern sollen. Diese sind mittels animierter Displacement-Map umgesetzt."
+            }
+        },
+
+        "Videografie": {
+            "title": "Videografie",
+            "part1": {
+                "title": "Statische und Dynamische Aufnahmen",
+                "text": "Für die Aufnahmen im Parkhaus wurde mit statischen Kameras aus drei Perspektiven gearbeitet. Zudem wurde für die dynamischen Shots und Close Ups ein Gymbal verwendet. Die Aufnahmen erfolgten in einer 4k Auflösung obwohl das Finale Produkt in HD aufgelöst ist. So kann nachträglich im Schnitt mit künstlichen Kamerabewegungen gearbeitet werden."
+            }
+        },
+
+        "Greenscreening": {
+            "part2": {
+                "title": "Greenscreening",
+                "text": "Um die Tänzerin in die Traumwelt zu setzen und andererseits die Traumwelt in die Reale Welt zu integrieren wurde ein Teil der Aufnahmen in einem Videostudio gedreht. Um in der realen Welt Animations-Flächen zu schaffen verwendeten wir einen Greenscreen-Suit."
+            }
+
+        }
+        
+    },
+
+    "credits": {
+        "Konzept": "Tom Henkel, Elias Ginter, Timo Holzmann, Bastian Rögele",
+        "Tanz": "Christine Kuckuck",
+        "Musik & Mix": "Adrian Ludwig (Crowded), Elias Ginter",
+        "Set": "Timo Holzmann, Bastian Rögele",
+        "Schnitt": "Tom Henkel, Elias Ginter",
+        "Visuelle Effekte": "Tom Henkel, Elias Ginter",
+        "Supervision": "Prof. Rosa Rohm, Prof. Carolin Jörg"
+    }
+}

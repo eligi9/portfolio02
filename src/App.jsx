@@ -1,34 +1,23 @@
-import { useState } from 'react'
-import reactLogo from '/assets/react.svg'
-import GridContainer from '/grid/GridContainer'
-import GridItem from '/grid/GridItem'
-import viteLogo from '/vite.svg'
 import '/css/App.scss'
-import Project from '/components/project/Project'
+import ProjectView from '/components/project/ProjectView'
+import { useDispatch, useSelector } from 'react-redux'
+import { getProject } from '/state/projectSlice'
+import { useEffect} from 'react'
 
 function App() {
-  //const [count, setCount] = useState(0)
+  const dispatch = useDispatch()
+  const currentProject = useSelector((state) => state.project.project)
+
+  useEffect(() => {
+    dispatch(getProject())
+  },[])
 
   return (
     <>
-      <GridContainer cols="9" rows="9" color="green">
-        <GridItem rows="2/9" cols="2/9" color="red">
-          <div>
-            <a href="https://vitejs.dev" target="_blank">
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank">
-              <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
-          </div>
-        </GridItem>
-      </GridContainer>
-      <GridContainer cols="9" rows="9" color="black">
-        <GridItem rows="1/10" cols="2/9">
-          <Project type="React"></Project>
-        </GridItem>
-
-      </GridContainer>
+      <ProjectView type={currentProject? currentProject.type:""} name={currentProject? currentProject.name:""}></ProjectView>
+      <button onClick={() => dispatch(getProject("easyjam"))}>Get EasyJam</button>
+      <button onClick={() => dispatch(getProject("riss"))}>Get Riss</button>
+      <button onClick={() => dispatch(getProject("lonisweltraumreise"))}>Get Lonis</button>
     </>
   )
 }

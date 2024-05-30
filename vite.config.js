@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  root: fileURLToPath(new URL('./', import.meta.url)),
   resolve:
   { alias:
     { 
@@ -12,12 +13,18 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       '/css':   fileURLToPath(new URL('./src/css', import.meta.url)),
       '/assets':   fileURLToPath(new URL('./src/assets', import.meta.url)),
+      '/state':   fileURLToPath(new URL('./src/state', import.meta.url)),
       '/components':   fileURLToPath(new URL('./src/components', import.meta.url)),
-      '/grid':   fileURLToPath(new URL('./src/components/grid', import.meta.url))
+      '/grid':   fileURLToPath(new URL('./src/components/grid', import.meta.url)),
+      '/fonts':   fileURLToPath(new URL('./src/assets/fonts', import.meta.url)),
+      '/service':   fileURLToPath(new URL('./src/service', import.meta.url)),
+      '/json':   fileURLToPath(new URL('./public/json', import.meta.url)),
+      '/images':   fileURLToPath(new URL('./src/assets/images', import.meta.url))
     }
   },
   build: 
-  { outDir:  '../web',
+  { outDir:  './web',
     minify:  true,
-  }  
+  },
+  base: './',
 })

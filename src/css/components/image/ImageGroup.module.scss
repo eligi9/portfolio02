@@ -1,0 +1,16 @@
+@import 'Image';
+img {
+  &.portrait{
+    height: $image-height;
+    object-fit: scale-down;
+    flex-grow: 1;
+    flex-shrink: 0;
+  
+  }
+  &.landscape{
+    height: $image-height;
+    object-fit: cover;
+    object-position: 50% 50%;
+    flex-grow: 2;
+  }
+}

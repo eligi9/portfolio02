@@ -1,0 +1,90 @@
+{
+  "name": "Lonis Weltraumreise",
+  "version": "1.0.0",
+  "description": "ist eine Webapplikation die in Kooperation mit der Organisation “Tigerherz – Wenn Eltern Krebs haben”, ein Angebot des Tumorzentrums Freiburg-CCCF, entstanden ist.Im Vordergrund steht die Frage auf welche Art man eine Krebserkrankung mit den eigenen Kindern kommuniziert.Lonis Weltraumreise ist eine interaktive Geschichte, die es den Eltern zusammen mit ihren Kindern erlaubt, ihre Erkrankung sowie mögliche Therapieformen zu entdecken. Die Kommunikation erfolgt somit nicht von auf einem rein verbalen Weg, sondern auf kindgerechte Weise, verpackt in eine Geschichte.",
+  "type": "Webapplication, Story, Education",
+  "video": "https://www.youtube.com/embed/9D5fCz_LJe4?si=muVwKlhOoq2YaVza",
+  "content": {
+      "Konzept": {
+          "title": "Konzept",
+          "part1": {
+              "title": "Story: Eine Reise mit Loni durchs Weltall",
+              "text": "Die Anwendung konzentriert sich auf die Hauptfigur Loni, die gemeinsam mit ihrem erkrankten Elternteil eine Reise unternimmt. Sie erfährt, was Krebs ist und wie er behandelt wird. Die Handlung führt Loni zu verschiedenen Planeten, auf denen unterschiedliche Therapieformen für Kinder anschaulich erläutert werden. Der Weltraum dient als metaphorischer Rahmen, um die emotionale Reise kindgerecht zu gestalten."
+          },
+          "part2": {
+              "title": "Webanwendung für Tablets",
+              "text": "Lonis Weltraumreise wurde primär für Tablets entwickelt. So kann für die Nutzung der Anwendung ein ruhiger, gemütlicher Ort gewählt werden. Ein Ort des Wohlfühlens ist insbesondere deshalb wichtig, weil es darum geht eine sehr sensible Botschaft zu vermitteln. Die Anwendung funktioniert ebenfalls auf Laptops. Durch die Implementierung als Webapp läuft die Anwendung direkt im Browser und ist auf allen Endgeräten verfügbar, ohne dass Downloads erforderlich sind. Zudem ist keine Benutzerkonto nötig, was eine einfache & unkomplizierte Nutzung gewährleistet."
+          },
+          "part3": {
+              "title": "Herausforderung",
+              "text": "ne große Herausforderung in der Konzeption der Geschichte bestand darin, ein sehr ernstes Thema anzusprechen und es gleichzeitig kindgerecht zu Verpacken. Wichtig ist auch, dass medizinische Inhalte korrekt erläutert werden. Das Projekt “Lonis Weltraumreise” erfolgte deshalb in enger Zusammenarbeit mit dem Team von Tigerherz, bestehend aus Sozialpädagogen, Ärzten und Psychologen."
+          }
+      },
+
+      "Exploration_und_Interaktion": {
+        "title": "Konzept",
+        "part1": {
+            "title": "Räumliche und Zeitliche Achse:",
+            "text": "Die Navigation innerhalb der Geschichte erfolgt durch horizontales Scrollen mit dem Finger. Dabei bewegt man sich auf zwei verschiedenen Achsen, der räumlichen- und der zeitlichen Achse. Die Fortbewegung im Raum wird durch eine Markierung des Bodens festgelegt. Das Wechselspiel der Räume sorgt für ein Abwechslungsreiches Erlebnis. Die Geschichte wir begleitet von Animationen die durch Benutzerinteraktion gesteuert werden, was ein aktives erleben Ermöglicht."
+        }
+      },
+
+      "Abgrenzung_der_Erklärebene": {
+        "part1": {
+          "title": "Räumliche und Zeitliche Achse:",
+          "text": "Auf jedem der Planeten wir die entsprechende Therapieform mit Hilfe von Illustrationen und Animationen auf kindgerechte Art & Weise erklärt. Diese Teil der Erklärung soll sich gezielt vom fiktiven Rest der Geschichte abheben und grenzt sich deshalb durch eine neutrale weiße Umgebung von ansonsten sehr bunten Erscheinungsbild ab. Zu jedem dieser Szenarien gibt es zu dem ein interaktives Element. Durch die aktive Teilnahme können die erzählten Inhalte besser verstanden und verinnerlicht werden. Anders als in lineare Erzählungen haben Kinder die Möglichkeit, die Reihenfolge der Therapien eigenständig zu bestimmen und dadurch aktiv den Verlauf der Geschichte zu beeinflussen."
+        }
+      },
+
+      "Individualisierbarkeit": {
+        "title": "Individualisierbarkeit",
+        "part1": {
+          "title": "",
+          "text": "Es gibt einige analoge Kinderbücher zum Thema “Wie erkläre ich meinem Kind, dass ich Krebs habe”."
+        },
+
+        "part2": {
+          "title": "Das Problem:",
+          "text": "Oft stimmen die Rahmenbedingungen der Geschichte nicht mit der Realität überein. Zum Beispiel ist in der Geschichte das Kind oder ein anderer Elternteil erkrankt. Auch welche Therapie zum Einsatz kommt, bildet häufig nicht die Realität ab. In diesem Fall muss die Geschichte nach dem Vorlesen erneut erklärt und auf die eigene Situation umgemünzt werden. Dies kann zu Verwirrung führen und erschwert den eigentlichen Ansatz der abstrakten Vermittlung. Lonis Weltraumreise kann personalisiert werden. Das Geschlecht der erkrankten Person und welche Therapien angestrebt werden, kann vor dem Lesen angeschaut werden."
+        },
+
+        "part3": {
+          "title": "Personalisierte Geschichte mit Custom-Link:",
+          "text": "Damit die Geschichte gestarten werden kann, muss sie zuvor personalisiert worden sein. Zum einen kann die Geschichte manuell von den Eltern selbst personalisiert werden. Es gibt jedoch auch die Möglichkeit für die Organisation Tigerherz die Geschichte zu individualisieren und per Custom-Link an die jeweilige Familie zu schicken. Dies ermöglicht einen sofortigen Start in die Geschichte."
+        }
+      },
+
+      "Technologien": {
+        "title": "Technologien",
+        "part1": {
+          "title": "React & Vite",
+          "text": "Lonis Weltraumreise wurde mit der Bibliothek Java Script Bibliothek React umgesetzt, die es ermöglicht Webseiten Komponenten basiert zu aufzubauen. Zudem findet das Tool Vite Verwendung. Vite bietet nicht nur einen optimierten Buildprozess sondern auch einen Entwicklungsserver."
+        },
+
+        "part2": {
+          "title": "Lottiefiles",
+          "text": "Animationen sind mittels Lottifiles eingebunden. Lottifiles ist ein Dateiformat welches Vektoranimationen im JSON-Format codiert. Diese Dateien werden im Browser als SVG gezeichnet. Ein großer Vorteil besteht darin, dass die Animationen zur Laufzeit verändert werden können. Ausserdem sind sie beliebig skalierbar. Lottie bietet zu dem eine Komponenten basierte React Schnittstelle an. Mit Lottie Interactivity lassen sich Lottie-Animationen interaktiv Steuern. Animationen können durch Klick, Scroll-Position etc getriggert werden. Ausserdem wird ein Verkettung verschiedener Animationen ermöglicht."
+        },
+
+        "part3": {
+          "title": "Pixie.js",
+          "text": "Die interaktiven Lern-Elemente sind mit PIXIE.JS erstellt. PIXIE.JS ist eine leistungsstarken JavaScript-Bibliothek zur Erstellung von 2D-Webgrafiken mit WebGL-Rendering"
+        },
+
+        "part4": {
+          "title": "React-Spring",
+          "text": "Um den immer wieder auftretenden Parallax-Effekt umzusetzen wird mit der Bibliothek React-Spring gearbeitet. Die Integration physikalischer Eigenschaften in einzelne UI-Komponenten schafft eine organische Benutzererfahrung."
+        }
+      }
+  },
+
+  "credits": {
+    "Web-Development": "Tom Henkel, Elias Ginter, Timo Holzmann, Bastian Rögele",
+    "Konzept": "Tom Henkel, Lena Vogentanz, Philipp Hettenkofer, Alexandra Zerbe, Florentine Schwaab, Leonie Bulling, Elisabeth Breitenhuber, Elias Ginter",
+    "Story": "Philipp Hettenkofer, Lisa Kerridge ",
+    "Illustration & Animation": "Tom Henkel, Alexandra Zerbe",
+    "Movie": "Lena Vogentanz, Elisabeth Breitenhuber, Lenonie Bulling, Florentine Schwaab",
+    "Collaboration": "Tigerherz, Tumorzentrums Freiburg-CCCF",
+    "Supervision": "Prof. Daniel Rothaug, Prof. Dr.-Ing. Alexandra Teynor, Fabian Kopf M.Sc"
+}
+}
