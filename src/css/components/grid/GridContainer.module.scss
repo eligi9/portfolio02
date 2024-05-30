@@ -2,9 +2,9 @@
 
 
 .grid_container {
-  width: 100vw;
+  width: 100%;
   display: grid;
-  gap: 10px; /* Abstand zwischen den Spalten */
+  gap: 20px;/* Abstand zwischen den Spalten */
   overflow: hidden;
 
   &.g_99 {
@@ -17,12 +17,21 @@
     grid-template-rows: repeat(5, 1fr);
   }
 
+  &.g_182{
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
   &.gc_18{
     grid-template-columns: repeat(18, 1fr);
   }
 
   &.gc_9{
     grid-template-columns: repeat(9, 1fr);
+  }
+
+  &.gc_4{
+    grid-template-columns: repeat(4, 1fr);
   }
 
 }

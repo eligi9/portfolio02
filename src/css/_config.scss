@@ -3,31 +3,60 @@
 $comfortaa-font-path: "/fonts/comfortaa";
 
 @font-face {
-    // This is parsed as a normal function call that takes a quoted string.
-    src: url("#{$comfortaa-font-path}/Comfortaa-Regular.ttf") format("ttf");
-    font-family: "Comfortaa";
-    font-weight: bold;
+    src: url("#{$comfortaa-font-path}/Comfortaa-Regular.ttf") format("truetype");
+    font-family: "Comfortaa-Regular";
+    font-weight: normal;
 }
 
-$background-color:  #C5EFFC;
+@font-face {
+    src: url("#{$comfortaa-font-path}/Comfortaa-Medium.ttf") format("truetype");
+    font-family: "Comfortaa-Medium";
+    font-weight: 500; // Use the numeric value for 'medium'
+}
+
+@font-face {
+    src: url("#{$comfortaa-font-path}/Comfortaa-Light.ttf") format("truetype");
+    font-family: "Comfortaa-Light";
+    font-weight: 300; // Use the numeric value for 'light'
+}
+
+@font-face {
+    src: url("#{$comfortaa-font-path}/Comfortaa-Bold.ttf") format("truetype");
+    font-family: "Comfortaa-Bold";
+    font-weight: 700; // Use the numeric value for 'light'
+}
+
+$smooth-black:  #181818;
+$smooth-white:  #e4e1d9;
 
 $font-family-sans:  Verdana, Helvetica, sans-serif;
 $font-family-serif: "Times New Roman", Times, serif;
 
-$font-family-Comfortaa: "Comfortaa", Times, serif;
+$font-family-Regular: "Comfortaa-Regular", Times, serif;
+$font-family-Light: "Comfortaa-Light", Times, serif;
+$font-family-Medium: "Comfortaa-Medium", Times, serif;
+$font-family-Bold: "Comfortaa-Bold", Times, serif;
 
 $comfortable-line-height: 1.5;
 
-$font-size-base:    3vw;
-$font-size-factor:  1.25;  /* cmp. https://type-scale.com/ */
+$font-size-base:    0.8vw;
+$font-size-factor:  1.4;  /* cmp. https://type-scale.com/ */
  
+$font-size-h6:      math.pow($font-size-factor,0.8)*$font-size-base;
 $font-size-h5:      math.pow($font-size-factor,1)*$font-size-base;
-$font-size-h4:      math.pow($font-size-factor,2)*$font-size-base;
-$font-size-h3:      math.pow($font-size-factor,3)*$font-size-base;
-$font-size-h2:      math.pow($font-size-factor,4)*$font-size-base;
+$font-size-h4:      math.pow($font-size-factor,3)*$font-size-base;
+$font-size-h3:      math.pow($font-size-factor,4)*$font-size-base;
+$font-size-h2:      math.pow($font-size-factor,5)*$font-size-base;
 $font-size-h1:      math.pow($font-size-factor,5)*$font-size-base;
 
-$font-size-p:       math.pow($font-size-factor,0)*$font-size-base;
+
+$image-height-base:    14vw;
+$image-size-factor:    1.4;
+$image-height:      math.pow($image-size-factor, 2)*$image-height-base;
+
+
+//$font-size-p:       math.pow($font-size-factor,1.5)*$font-size-base;
+$font-size-p: 24px;
 $font-size-p-large: math.pow($font-size-factor,2)*$font-size-base;
 
 $font-size-small:   math.pow($font-size-factor,-1)*$font-size-base;

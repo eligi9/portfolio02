@@ -2,13 +2,27 @@ import config from '@/json/config.json'
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import {getJson} from '/service/getData.js'
 
+
 console.log(config.apiRoot)
 
+/*
+const getData = (project) => {
+  if (project === "easyjam") {
+    return easyjam
+  }
+  if (project === "riss") {
+    return riss
+  }
+  if (project === "lonisweltraumreise") {
+    return lonisweltraumreise
+  }
+}
+*/
 export const getProject = createAsyncThunk(
   "project/getProject",
     async (project, thunkAPI) => {
       try {
-        const response = await getJson(config.apiRoot.replace('$1', project ))
+        const response = await getJson(`/json/projects/${project}.json`)
         return response
       }
       catch (error) {

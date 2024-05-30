@@ -1,12 +1,17 @@
 @import 'Project';
+
 h1 {
-    line-height: 100%;
-    font-family: "Comfortaa", Times, serif;
-    font-size: $font-size-h1;
+  line-height: $comfortable-line-height;
+  font-family: "Comfortaa", Times, serif;
+  font-size: $font-size-h1;
 }
 
 h2 {
-  line-height: 100%;
-  font-family: "Comfortaa", Times, serif;
-  font-size: $font-size-h5;
+line-height: 100%;
+font-family: "Comfortaa", Times, serif;
+font-size: $font-size-h3 !important;
+}
+
+.box {
+  margin-top: 2em;
 }

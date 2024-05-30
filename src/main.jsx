@@ -12,6 +12,7 @@ const theme = createTheme({
   /** Put your mantine theme override here */
 });
 
+console.log(config.defaultProject)
 store.dispatch(getProject(config.defaultProject))
 
 let init = ReactDOM.createRoot(document.getElementById('root')).render(

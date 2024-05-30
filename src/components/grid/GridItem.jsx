@@ -12,11 +12,11 @@ GridItem.propTypes = {
 };
 
 
-export default function GridItem({cols, rows, color, justify, align, children, onClick}) {
+export default function GridItem({cols, rows, children, onClick, justify, align}) {
   const gridItemStyle = {
     gridColumn: cols,
     gridRow: rows,
-    background: color,
+    //background: color,
     justifySelf: justify,
     alignSelf: align, 
     //position: "relative", // Ensures that the text is always on top of everything else

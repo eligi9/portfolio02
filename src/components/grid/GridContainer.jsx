@@ -10,7 +10,6 @@ GridContainer.propTypes = {
 };
 
 export default function GridContainer({cols, rows, color, children}) {
-  //const [age, setAge] = useState(28);
   const container  = useRef();
   const [containerType, setConatinerType] = useState('');
 

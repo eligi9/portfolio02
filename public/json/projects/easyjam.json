@@ -1,6 +1,41 @@
 {
   "name": "Easy Jam",
-  "description": "Easy Jam ist eine Webapplikation die dafür ausgelegt ist, das Musizieren für Anfänger zu erleichtern. Ein Einstieg in die Welt der Musik bedarf Geduld, Zeit und Übung. Am besten lernt man, wenn man sich mit anderen Leuten zusammen setzt und spielt. ",
+  "description": "Easy Jam ist eine Webapplikation die dafür ausgelegt ist, das Musizieren für Anfänger zu erleichtern. Ein Einstieg in die Welt der Musik bedarf Geduld, Zeit und Übung. Am besten lernt man, wenn man sich mit anderen Leuten zusammen setzt und spielt. Problem: Wenn man jedoch völlig am Anfang steht, ist es schwer direkt in einer Band zu spielen. Oft ist das Netzwerk an anderen Musikern die man kennt, sehr beschränkt. Alleine zuhause zu üben geht natürlich, ist aber auf Dauer langweilig. Easy Jam bietet Einsteigern in der Musik die Möglichkeit Jam-Tracks auf intuitive Weise per Drag und Drop zu erstellen. Dabei wird das Gefühl für Töne Harmonien und Tempo spielerisch geschult.",
   "type": "Webdevelopment, App, Education",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "video": "https://www.youtube.com/embed/F6xsKmUXmDk?si=i2ysWXkc8jiz1_T9",
+  "content": {
+    "Konzept": {
+        "title": "Konzept",
+        "part1": {
+            "title": "",
+            "text": "Die App wird in drei Schritten benutzt"
+
+        }
+    },
+
+    "Gestaltung": {
+        "title":"",
+        "part1": {
+            "title": "Gestaltung",
+            "text": "Die Gestaltung sollte einfach und intuitiv gestaltet sein. So beschränken sich die einzelnen Seiten auf drei Teilbereiche die vertikal angeordnet sind. Wobei die Hauptfunktion immer mittig sitzt. (zB. Tap bei der Tempoauswahl oder Mikrofon bei der Wahl des Grundtons). Weiter werden Elemente erst dann gezeigt wenn sie nötig sind. So wird der Mülleimer für Akkord-Steine erst dann angezeigt, wenn man diese versucht zu bewegen."
+        }
+    },
+
+    "FestlegungTempo": {
+        "title":"",
+        "part1": {
+            "title": "Festlegung des Tempos",
+            "text": "Die Festlegung der Geschwindigkeit des Backingtracks soll durch interaktive Gesten festgelegt werden. Anders als bei herkömmlichen Anwendungen, wo die Geschwindigkeit per Auswahl über ein Dropdown-Menü erfolgt, hat der Benutzer bei Easy Jam die Möglichkeit durch Tippen auf den Bildschirm die BPM Anzahl festzulegen. So wird das intuitive Verständnis für den Takt geschult."
+        }
+    },
+    "FestlegungGrundton": {
+        "title":"",
+        "part1": {
+            "title": "Festlegung des Grundtons",
+            "text": "Durch Einsummen einer Melodie oder eines Tones wird der Grundton identifiziert. Ob Minor (eher traurig) oder Major(eher fröhlich) wird durch Auswahl zwischen einem Wolken und einem Sonnen festgelegt. Der Grundton bestimmt die Auswahl auf der Akkord-Farb-Palette. Dafür wird ein Konzept aus der Musiktheorie genutzt: der Quintenzirkel. Grundsätzlich gilt – ohne zu sehr ins theoretische abzuschweifen – alle Akkorde, die benachbart sind, klingen gut zusammen. Zu einem Grundakkord (Kreis) sind die Grauhinterlegten benachbart. Genau diese landen dann auf der Farbpalette."
+        }
+    }   
+
+  }
 }
