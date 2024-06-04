@@ -2,7 +2,7 @@
   "name": "Lonis Weltraumreise",
   "version": "1.0.0",
   "description": "Lonis Weltraumreise ist eine Webapplikation die in Kooperation mit der Organisation “Tigerherz – Wenn Eltern Krebs haben”, ein Angebot des Tumorzentrums Freiburg-CCCF, entstanden ist.Im Vordergrund steht die Frage auf welche Art man eine Krebserkrankung mit den eigenen Kindern kommuniziert.Lonis Weltraumreise ist eine interaktive Geschichte, die es den Eltern zusammen mit ihren Kindern erlaubt, ihre Erkrankung sowie mögliche Therapieformen zu entdecken. Die Kommunikation erfolgt somit nicht von auf einem rein verbalen Weg, sondern auf kindgerechte Weise, verpackt in eine Geschichte.",
-  "type": "Webapplication, Story, Education",
+  "type": "Webapp, Story, Education",
   "video": "https://www.youtube.com/embed/UTGTBpo9Myo?si=pV9mmfeM-3lubECO",
   "content": {
       "Konzept": {

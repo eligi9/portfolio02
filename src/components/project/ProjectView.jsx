@@ -1,24 +1,16 @@
-import PropTypes from 'prop-types';
+
 //import styles from '/css/components/project/ProjectView.module.scss';
-
-
 import { useSelector } from "react-redux";
+import { useEffect } from 'react';
 
 import EasyJam from '/components/project/EasyJam'
 import Riss from '/components/project/Riss'
 import LonisWR from '/components/project/LonisWR'
-import { useEffect } from 'react';
 
 
-Project.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-};
+export default function ProjectView() {
 
-
-export default function Project({type, name}) {
-
-  const currentProject = useSelector((state) => state.project.project)
+  const currentProject = useSelector((state) => state.currentProject.project)
 
   const resetScrollPos = () => window.scrollTo(0, 0)
 
@@ -31,7 +23,6 @@ export default function Project({type, name}) {
       { currentProject.name === "Easy Jam" && <EasyJam currentProject={currentProject}></EasyJam> }
       { currentProject.name === "Riss" && <Riss currentProject={currentProject}></Riss> }
       { currentProject.name === "Lonis Weltraumreise" && <LonisWR currentProject={currentProject}/>}
-
     </>
   );
 }

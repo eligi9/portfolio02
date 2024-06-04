@@ -1,5 +1,6 @@
 {
-  "projects": ["riss", "lonis weltraumreise", "easy jam"],
+  "projects": ["riss", "lonisweltraumreise", "easyjam"],
   "defaultProject": "easyjam",
-  "apiRoot": "/json/projects/$1.json"
+  "apiRoot": "/json/projects/$1.json",
+  "defaultSection": "home"
 }

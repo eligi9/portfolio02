@@ -3,7 +3,8 @@ import App                              from '@/App.jsx'
 import { Provider }                     from 'react-redux'
 import { createTheme, MantineProvider } from '@mantine/core';
 import { store }                        from '/state/store.js'
-import { getProject }                   from './state/projectSlice';
+import { getProject }                   from '/state/currentProjectSlice';
+import { getAllProjects }               from '/state/allProjectsSlice';
 import config                           from '@/json/config.json'
 import '/css/index.scss'
 import '@mantine/core/styles.css';
@@ -14,6 +15,7 @@ const theme = createTheme({
 
 console.log(config.defaultProject)
 store.dispatch(getProject(config.defaultProject))
+store.dispatch(getAllProjects())
 
 let init = ReactDOM.createRoot(document.getElementById('root')).render(
     //<React.StrictMode>

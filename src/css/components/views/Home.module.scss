@@ -1,0 +1,20 @@
+@import 'View';
+
+.letters {
+  font-family: Biryani, Times, serif;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 90%;
+  letter-spacing: -12px;
+  display: block;
+}
+
+.small {
+  color: $smooth-blue;
+  font-family: Biryani, Times, serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 150%;
+  letter-spacing: -4px;
+  display: block;
+}

@@ -1,10 +1,3 @@
-import ProjectHeading from '/components/project/ProjectHeading';
-import '/css/components/project/ProjectView.module.scss';
-import GridContainer from "../grid/GridContainer";
-import GridItem from "../grid/GridItem";
-
-
-import ProjectDescription from './ProjectDescription';
 import PropTypes from 'prop-types';
 
 import img1 from '/assets/images/lonisweltraumreise/loni_1.png'
@@ -15,10 +8,14 @@ import img_interaktion2 from '/assets/images/lonisweltraumreise/interaktion_2.pn
 import img_interaktion3 from '/assets/images/lonisweltraumreise/interaktion_3.png'
 import img_individualisierung from '/assets/images/lonisweltraumreise/individualisierung.png'
 
+import GridContainer from "/grid/GridContainer";
 
-import OrderedList from './OrderedList';
-import ProjectVideo from './ProjectVideo';
-import ProjectSection from './ProjectSection';
+import ProjectDescription from '/projectItems/ProjectDescription';
+import ProjectHeading from '/projectItems/ProjectHeading';
+import ProjectVideo from '/projectItems/ProjectVideo';
+import ProjectSection from '/projectItems/ProjectSection';
+import ProjectCredits from '/projectItems/ProjectCredits';
+
 import ImageGroup from '/components/image/ImageGroup';
 
 EasyJam.propTypes = {
@@ -28,7 +25,7 @@ EasyJam.propTypes = {
 export default function EasyJam({currentProject}) {
 
   return (
-        <GridContainer cols='9'>
+        <GridContainer cols='9' base={true}>
           <ProjectHeading project={currentProject.name} type={currentProject.type}></ProjectHeading>
           <ProjectVideo video={currentProject.video}/>
           <ProjectDescription title={currentProject.name} > { currentProject.description } </ProjectDescription>
@@ -40,6 +37,7 @@ export default function EasyJam({currentProject}) {
           <ProjectSection currentSection={currentProject.content.Individualisierbarkeit}></ProjectSection>
           <ImageGroup images={[img_individualisierung]}></ImageGroup>
           <ProjectSection currentSection={currentProject.content.Technologien}></ProjectSection>
+          <ProjectCredits credits={currentProject.credits}></ProjectCredits>
         </GridContainer>
 
   );

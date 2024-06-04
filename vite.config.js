@@ -16,10 +16,12 @@ export default defineConfig({
       '/state':   fileURLToPath(new URL('./src/state', import.meta.url)),
       '/components':   fileURLToPath(new URL('./src/components', import.meta.url)),
       '/grid':   fileURLToPath(new URL('./src/components/grid', import.meta.url)),
+      '/projectItems':   fileURLToPath(new URL('./src/components/project/projectItems', import.meta.url)),
       '/fonts':   fileURLToPath(new URL('./src/assets/fonts', import.meta.url)),
       '/service':   fileURLToPath(new URL('./src/service', import.meta.url)),
       '/json':   fileURLToPath(new URL('./public/json', import.meta.url)),
-      '/images':   fileURLToPath(new URL('./src/assets/images', import.meta.url))
+      '/images':   fileURLToPath(new URL('./src/assets/images', import.meta.url)),
+      '/icons':   fileURLToPath(new URL('./src/assets/icons', import.meta.url))
     }
   },
   build: 

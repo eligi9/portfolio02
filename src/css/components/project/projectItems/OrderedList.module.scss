@@ -1,0 +1,12 @@
+@import 'ProjectItems';
+
+ol {
+  font-family: Roboto;
+  font-size: $font-size-p !important;
+  font-weight: 300;
+}
+
+ol li::before { 
+  font-family: $font-family-Bold;
+  font-size: $font-size-p;
+} 

@@ -1,0 +1,19 @@
+{
+  "riss" : {
+    "name": "Riss",
+    "type": "Film, Animation",
+    "description": "Der Riss markiert die Grenze zwischen zwei Realitäten: einer düsteren, kalten Welt, geerdet in Fakten und einer farbenfrohen, leichtfüßigen Welt. Das Filmprojekt 'Riss' erkundet die Kraft der Emotionen und die Bewegung zwischen diesen unterschiedlichen Sphären. Es beleuchtet den inneren Kampf um Autonomie – die Selbstbestimmung der eigenen Realität.\n\n“Riss” ist ein Filmprojekt in Kooperation mit der Tänzerin Christine Kuckuck das im Rahmen von “Dance, Draw & Dance”, eines fachübergreifendes Semesterkonzepts entstanden ist.\nDas Ergebnis war ein Videoprojekt, bei dem wir eine Verbindung zwischen der reinen Tanzkunst, der filmischen Aufzeichnung und der Erweiterung und Verstärkung der vom Tänzer ausgedrückten Emotionen suchten."
+  },
+
+  "easyjam" : {
+    "name": "Easy Jam",
+    "type": "Webapp, Education",
+    "description": "Easy Jam ist eine Webapplikation die dafür ausgelegt ist, das Musizieren für Anfänger zu erleichtern. Ein Einstieg in die Welt der Musik bedarf Geduld, Zeit und Übung. Am besten lernt man, wenn man sich mit anderen Leuten zusammen setzt und spielt. Problem: Wenn man jedoch völlig am Anfang steht, ist es schwer direkt in einer Band zu spielen. Oft ist das Netzwerk an anderen Musikern die man kennt, sehr beschränkt. Alleine zuhause zu üben geht natürlich, ist aber auf Dauer langweilig. Easy Jam bietet Einsteigern in der Musik die Möglichkeit Jam-Tracks auf intuitive Weise per Drag und Drop zu erstellen. Dabei wird das Gefühl für Töne Harmonien und Tempo spielerisch geschult."
+  },
+
+  "lonisweltraumreise" : {
+    "name": "Lonis Weltraumreise",
+    "type": "Webapp, Story, Education",
+    "description": "Lonis Weltraumreise ist eine Webapplikation die in Kooperation mit der Organisation “Tigerherz – Wenn Eltern Krebs haben”, ein Angebot des Tumorzentrums Freiburg-CCCF, entstanden ist.Im Vordergrund steht die Frage auf welche Art man eine Krebserkrankung mit den eigenen Kindern kommuniziert.Lonis Weltraumreise ist eine interaktive Geschichte, die es den Eltern zusammen mit ihren Kindern erlaubt, ihre Erkrankung sowie mögliche Therapieformen zu entdecken. Die Kommunikation erfolgt somit nicht von auf einem rein verbalen Weg, sondern auf kindgerechte Weise, verpackt in eine Geschichte."
+  }
+}

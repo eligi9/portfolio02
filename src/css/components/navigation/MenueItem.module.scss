@@ -1,0 +1,14 @@
+@import 'Navigation';
+
+.menueItem {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-family: $font-family-Regular;
+  border: none;
+}
+
+button:hover {
+  background-color: $smooth-black;
+  color: $smooth-white;
+}

@@ -1,0 +1,21 @@
+@import 'Navigation';
+
+.header {
+  width: 100%;
+  height: 10vh;
+  position:sticky;
+  background-color: $smooth-black;
+}
+
+
+button {
+  justify-self: flex-end !important;
+  background-color: $smooth-white;
+
+
+}
+
+.burger {
+  background-color: $smooth-white !important;
+  float: right;
+}
