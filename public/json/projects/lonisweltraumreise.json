@@ -1,9 +1,9 @@
 {
   "name": "Lonis Weltraumreise",
   "version": "1.0.0",
-  "description": "ist eine Webapplikation die in Kooperation mit der Organisation “Tigerherz – Wenn Eltern Krebs haben”, ein Angebot des Tumorzentrums Freiburg-CCCF, entstanden ist.Im Vordergrund steht die Frage auf welche Art man eine Krebserkrankung mit den eigenen Kindern kommuniziert.Lonis Weltraumreise ist eine interaktive Geschichte, die es den Eltern zusammen mit ihren Kindern erlaubt, ihre Erkrankung sowie mögliche Therapieformen zu entdecken. Die Kommunikation erfolgt somit nicht von auf einem rein verbalen Weg, sondern auf kindgerechte Weise, verpackt in eine Geschichte.",
-  "type": "Webapplication, Story, Education",
-  "video": "https://www.youtube.com/embed/9D5fCz_LJe4?si=muVwKlhOoq2YaVza",
+  "description": "Lonis Weltraumreise ist eine Webapplikation die in Kooperation mit der Organisation “Tigerherz – Wenn Eltern Krebs haben”, ein Angebot des Tumorzentrums Freiburg-CCCF, entstanden ist.Im Vordergrund steht die Frage auf welche Art man eine Krebserkrankung mit den eigenen Kindern kommuniziert.Lonis Weltraumreise ist eine interaktive Geschichte, die es den Eltern zusammen mit ihren Kindern erlaubt, ihre Erkrankung sowie mögliche Therapieformen zu entdecken. Die Kommunikation erfolgt somit nicht von auf einem rein verbalen Weg, sondern auf kindgerechte Weise, verpackt in eine Geschichte.",
+  "type": "Webapp, Story, Education",
+  "video": "https://www.youtube.com/embed/UTGTBpo9Myo?si=pV9mmfeM-3lubECO",
   "content": {
       "Konzept": {
           "title": "Konzept",
@@ -79,7 +79,7 @@
   },
 
   "credits": {
-    "Web-Development": "Tom Henkel, Elias Ginter, Timo Holzmann, Bastian Rögele",
+    "Web-Development": "Tom Henkel, Elias Ginter",
     "Konzept": "Tom Henkel, Lena Vogentanz, Philipp Hettenkofer, Alexandra Zerbe, Florentine Schwaab, Leonie Bulling, Elisabeth Breitenhuber, Elias Ginter",
     "Story": "Philipp Hettenkofer, Lisa Kerridge ",
     "Illustration & Animation": "Tom Henkel, Alexandra Zerbe",

@@ -1,0 +1,15 @@
+@import 'ProjectItems';
+.h1 {
+  line-height: $comfortable-line-height;
+  font-size: $font-size-h1;
+  display: inline;
+  text-align:"left";
+  margin-top: 20px;
+}
+
+.h2 {
+line-height: $comfortable-line-height;
+font-size: $font-size-h3 !important;
+display: inline-block;
+text-align:"left";
+}

@@ -1,41 +1,21 @@
 @use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&display=swap');
 
-$comfortaa-font-path: "/fonts/comfortaa";
 
-@font-face {
-    src: url("#{$comfortaa-font-path}/Comfortaa-Regular.ttf") format("truetype");
-    font-family: "Comfortaa-Regular";
-    font-weight: normal;
-}
 
-@font-face {
-    src: url("#{$comfortaa-font-path}/Comfortaa-Medium.ttf") format("truetype");
-    font-family: "Comfortaa-Medium";
-    font-weight: 500; // Use the numeric value for 'medium'
-}
-
-@font-face {
-    src: url("#{$comfortaa-font-path}/Comfortaa-Light.ttf") format("truetype");
-    font-family: "Comfortaa-Light";
-    font-weight: 300; // Use the numeric value for 'light'
-}
-
-@font-face {
-    src: url("#{$comfortaa-font-path}/Comfortaa-Bold.ttf") format("truetype");
-    font-family: "Comfortaa-Bold";
-    font-weight: 700; // Use the numeric value for 'light'
-}
 
 $smooth-black:  #181818;
 $smooth-white:  #e4e1d9;
+$smooth-blue: #2C3E50;
 
 $font-family-sans:  Verdana, Helvetica, sans-serif;
 $font-family-serif: "Times New Roman", Times, serif;
 
-$font-family-Regular: "Comfortaa-Regular", Times, serif;
-$font-family-Light: "Comfortaa-Light", Times, serif;
-$font-family-Medium: "Comfortaa-Medium", Times, serif;
-$font-family-Bold: "Comfortaa-Bold", Times, serif;
+$font-family-Regular: "Dosis", Times, serif;
+$font-family-Light: "Dosis", Times, serif;
+$font-family-Medium: "Dosis", Times, serif;
+$font-family-Bold: "Dosis", Times, serif;
 
 $comfortable-line-height: 1.5;
 
@@ -47,10 +27,10 @@ $font-size-h5:      math.pow($font-size-factor,1)*$font-size-base;
 $font-size-h4:      math.pow($font-size-factor,3)*$font-size-base;
 $font-size-h3:      math.pow($font-size-factor,4)*$font-size-base;
 $font-size-h2:      math.pow($font-size-factor,5)*$font-size-base;
-$font-size-h1:      math.pow($font-size-factor,5)*$font-size-base;
+$font-size-h1:      math.pow($font-size-factor,6)*$font-size-base;
 
 
-$image-height-base:    14vw;
+$image-height-base:    10vw;
 $image-size-factor:    1.4;
 $image-height:      math.pow($image-size-factor, 2)*$image-height-base;
 

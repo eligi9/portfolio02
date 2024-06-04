@@ -1,15 +1,18 @@
 @import 'config';
 
+
 h1 {
-  line-height: 100%;
+  line-height: 80%;
   font-family: $font-family-Bold;
   font-size: $font-size-h1;
+  font-weight: 600;
 
 }
 
 h2 {
   line-height: 100%;
   font-family: $font-family-Bold , Times, serif;
+  font-weight: 300;
   font-size: $font-size-h2;
 
 }
@@ -18,14 +21,15 @@ h3 {
   line-height: 100%;
   font-family: $font-family-Bold, Times, serif;
   font-size: $font-size-h3;
-  font-weight: 200;
+  font-weight: 600;
 
 }
 
 h4 {
   line-height: 100%;
-  font-family: $font-family-Light, Times, serif;
+  font-family: $font-family-Regular, Times, serif;
   font-size: $font-size-h4;
+  font-weight: 500;
 
 }
 

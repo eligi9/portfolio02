@@ -43,7 +43,7 @@ export default function ImageGroup({images}) {
   const renderImages = imageList.map(img => {
     console.log(img.isPortrait);
     return(
-      <img key={uuidv4()} src={img.src} className={
+      <img loading="lazy" key={uuidv4()} src={img.src} className={
         classNames({
           [styles.portrait]: img.isPortrait && !square.current,
           [styles.landscape]: !img.isPortrait || square.current, 

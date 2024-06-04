@@ -1,10 +1,4 @@
-import ProjectHeading from '/components/project/ProjectHeading';
-import '/css/components/project/ProjectView.module.scss';
-import GridContainer from "../grid/GridContainer";
-
-
 //import { useSelector } from "react-redux";
-import ProjectDescription from './ProjectDescription';
 import PropTypes from 'prop-types';
 
 import img1 from '/assets/images/riss/riss_1.png'
@@ -20,9 +14,14 @@ import img10 from '/assets/images/riss/riss_10.png'
 import img11 from '/assets/images/riss/riss_11.png'
 import img12 from '/assets/images/riss/riss_12.png'
 
+import GridContainer from "/grid/GridContainer";
 
-import ProjectVideo from './ProjectVideo';
-import ProjectSection from './ProjectSection';
+import ProjectHeading from '/projectItems/ProjectHeading';
+import ProjectVideo from '/projectItems//ProjectVideo';
+import ProjectSection from '/projectItems//ProjectSection';
+import ProjectDescription from '/projectItems//ProjectDescription';
+import ProjectCredits from '/projectItems/ProjectCredits';
+
 import ImageGroup from '/components/image/ImageGroup';
 
 Riss.propTypes = {
@@ -30,14 +29,10 @@ Riss.propTypes = {
 };
 
 export default function Riss({currentProject}) {
-  
-  //const currentProjectX = useSelector((state) => state.project.project)
 
 
   return (
-    <>
-     { currentProject.name === "Riss" && 
-        <GridContainer cols='9'>
+        <GridContainer cols='9' base={true}>
           <ProjectHeading project={currentProject.name} type={currentProject.type}></ProjectHeading>
           <ProjectVideo video={currentProject.video}/>
           <ProjectDescription title={currentProject.name} > { currentProject.description } </ProjectDescription>
@@ -53,8 +48,8 @@ export default function Riss({currentProject}) {
           <ImageGroup images={[ img10]}></ImageGroup>
           <ProjectSection currentSection={currentProject.content.Greenscreening}></ProjectSection>
           <ImageGroup images={[ img11, img12]}></ImageGroup>
+          <ProjectCredits credits={currentProject.credits}></ProjectCredits>
         </GridContainer>
-     }
-    </>
+
   );
 }

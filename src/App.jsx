@@ -1,23 +1,46 @@
 import '/css/App.scss'
 import ProjectView from '/components/project/ProjectView'
-import { useDispatch, useSelector } from 'react-redux'
-import { getProject } from '/state/projectSlice'
-import { useEffect} from 'react'
+import Header from '/components/navigation/Header'
+
+import { useSelector } from 'react-redux'
+
+
+import { useDisclosure } from '@mantine/hooks'
+import Menue from '/components/navigation/Menue.jsx'
+import Home from '/components/views/Home.jsx'
+import Projects from '/components/views/Projects.jsx'
+import Footer from '/components/footer/Footer'
+import Imprint from '/components/footer/Imprint'
+import PrivatPolicy from '/components/footer/PrivatPolicy'
+import { useEffect } from 'react'
 
 function App() {
-  const dispatch = useDispatch()
-  const currentProject = useSelector((state) => state.project.project)
+  const currentSection = useSelector((state) => state.currentSection.currentSection);
+
+
+  const [menueOpened, menueHandlers] = useDisclosure(false);
+
+  const toggleMenu = () => {
+    menueHandlers.toggle()
+  }
 
   useEffect(() => {
-    dispatch(getProject())
-  },[])
+    window.scrollTo(0, 0);
+  }, [currentSection])
+
 
   return (
     <>
-      <ProjectView type={currentProject? currentProject.type:""} name={currentProject? currentProject.name:""}></ProjectView>
-      <button onClick={() => dispatch(getProject("easyjam"))}>Get EasyJam</button>
-      <button onClick={() => dispatch(getProject("riss"))}>Get Riss</button>
-      <button onClick={() => dispatch(getProject("lonisweltraumreise"))}>Get Lonis</button>
+      <Header onClick={toggleMenu}/>
+      <main>
+        {currentSection === "home" && <Home/>}
+        {currentSection === "Xproject" && <ProjectView />}
+        {currentSection === "project" && <Projects></Projects>}
+        {currentSection === "privatpolicy" && <PrivatPolicy/>}
+        {currentSection === "imprint" && <Imprint/>}
+        {menueOpened && <Menue onClick={toggleMenu}/>}
+      </main>
+      <Footer/>
     </>
   )
 }
