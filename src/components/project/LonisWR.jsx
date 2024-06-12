@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import img1 from '/assets/images/lonisweltraumreise/loni_1.png'
-import img2 from '/assets/images/lonisweltraumreise/loni_2.png'
-import img3 from '/assets/images/lonisweltraumreise/loni_3.png'
+import img1 from '/assets/images/lonisweltraumreise/front1.png'
+import img2 from '/assets/images/lonisweltraumreise/front2.png'
+import img3 from '/assets/images/lonisweltraumreise/front3.png'
 import img_interaktion1 from '/assets/images/lonisweltraumreise/interaktion_1.png'
 import img_interaktion2 from '/assets/images/lonisweltraumreise/interaktion_2.png'
 import img_interaktion3 from '/assets/images/lonisweltraumreise/interaktion_3.png'

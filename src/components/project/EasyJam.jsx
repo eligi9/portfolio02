@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import img1 from '/assets/images/easyjam/easyjam_1.png'
-import img2 from '/assets/images/easyjam/easyjam_2.png'
-import img3 from '/assets/images/easyjam/easyjam_3.png'
+import img1 from '/assets/images/easyjam/front1.png'
+import img2 from '/assets/images/easyjam/front2.png'
+import img3 from '/assets/images/easyjam/front3.png'
 import img_bpm from '/assets/images/easyjam/bpm.png'
 import img_tone from '/assets/images/easyjam/tone.png'
 import img_jam from '/assets/images/easyjam/jam.png'

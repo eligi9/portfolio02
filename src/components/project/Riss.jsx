@@ -1,11 +1,11 @@
 //import { useSelector } from "react-redux";
 import PropTypes from 'prop-types';
 
-import img1 from '/assets/images/riss/riss_1.png'
-import img2 from '/assets/images/riss/riss_2.png'
+import img1 from '/assets/images/riss/front1.png'
+import img2 from '/assets/images/riss/front2.png'
 import img3 from '/assets/images/riss/riss_3.png'
 import img4 from '/assets/images/riss/riss_4.png'
-import img5 from '/assets/images/riss/riss_5.png'
+import img5 from '/assets/images/riss/front3.png'
 import img6 from '/assets/images/riss/riss_6.png'
 import img7 from '/assets/images/riss/riss_7.png'
 import img8 from '/assets/images/riss/riss_8.png'
