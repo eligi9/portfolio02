@@ -22,8 +22,10 @@ export default function Footer() {
     <>
       <GridContainer cols="9" color={"black"} base={true}>
         <GridItem cols={"1/10"}>
-          <button style={{color: "white"}} onClick={() => changeSection("imprint")}>Impressum</button>
-          <button style={{color: "white"}} onClick={() => changeSection("privatpolicy")}>Datenschutzerklärung</button>
+          <div style={{ width: "100%", height:"10vh", display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+            <button style={{border: "none", padding: "10px", color: "black", background: "white" }} onClick={() => changeSection("imprint")}>Impressum</button>
+            <button style={{border: "none", padding: "10px", color: "black", background: "white"}} onClick={() => changeSection("privatpolicy")}>Datenschutzerklärung</button>
+          </div>
         </GridItem>
       </GridContainer>
     </>
