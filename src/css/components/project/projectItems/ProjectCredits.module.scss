@@ -1,19 +1,18 @@
 @import 'ProjectItems';
 
 .container {
-  margin-top: 1.3rem;
+  margin: 20px 0;
 }
 
 
 .credit_key {
-  font-size: 1.2rem;
-  font-weight: 500;
+  @include font-size-p;
+  font-weight: 600;
   color: $smooth-black;
 
 }
 
 .credit_name {
-  font-size: 1.2rem;
-  font-weight: 200;
   color: $smooth-black;
+  @include font-size-p;
 }

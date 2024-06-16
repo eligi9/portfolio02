@@ -1,6 +1,8 @@
 import styles from"/css/components/grid/GridItem.module.scss";
 import PropTypes from 'prop-types';
 
+import classNames from "classnames";
+
 import {Group} from "@mantine/core"
 
 GridItem.propTypes = {
@@ -26,12 +28,10 @@ export default function GridItem({cols, rows, children, onClick, justify, align,
   return (
     <div
       style={gridItemStyle}
-      className={styles.grid_item}
+      className={classNames(styles.grid_item, {[styles.baseItem]:cols === "2/9"})}
       onClick={onClick}
     >
-      <Group w={"100%"} style={{gridItemStyle}} justify={justify? justify: "center"} align={align} className={styles.grid_item}>
-        {children}
-      </Group>
+      {children}
     </div>
   );
 }

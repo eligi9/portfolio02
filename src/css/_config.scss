@@ -9,6 +9,8 @@ $smooth-black:  #181818;
 $smooth-white:  #f3f3f3;
 $smooth-blue: #2C3E50;
 
+$base-grid-size: 9;
+
 $font-family-sans:  Verdana, Helvetica, sans-serif;
 $font-family-serif: "Times New Roman", Times, serif;
 
@@ -19,20 +21,24 @@ $font-family-Bold: "Dosis", Times, serif;
 
 $comfortable-line-height: 1.5;
 
-$font-size-base:    0.8vw;
+
+
+$font-size-base :    0.8vw;
+$font-size-base-m :    0.8vh;
+$layout-breakpoint-small: 960px;
 $font-size-factor:  1.4;  /* cmp. https://type-scale.com/ */
- 
-$font-size-h6:      math.pow($font-size-factor,0.8)*$font-size-base;
-$font-size-h5:      math.pow($font-size-factor,1)*$font-size-base;
-$font-size-h4:      math.pow($font-size-factor,3)*$font-size-base;
-$font-size-h3:      math.pow($font-size-factor,4)*$font-size-base;
-$font-size-h2:      math.pow($font-size-factor,5)*$font-size-base;
-$font-size-h1:      math.pow($font-size-factor,6)*$font-size-base;
+
+
+
+
+
 
 
 $image-height-base:    10vw;
+$image-height-base-m:    11vh;
 $image-size-factor:    1.4;
 $image-height:      math.pow($image-size-factor, 2)*$image-height-base;
+$image-height-m:    math.pow($image-size-factor, 2)*$image-height-base-m;
 
 
 //$font-size-p:       math.pow($font-size-factor,1.5)*$font-size-base;
@@ -40,3 +46,85 @@ $font-size-p: 24px;
 $font-size-p-large: math.pow($font-size-factor,2)*$font-size-base;
 
 $font-size-small:   math.pow($font-size-factor,-1)*$font-size-base;
+
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+  );
+
+  @mixin breakpoint($name) {
+    @media (max-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  }
+
+$font-size-h6:      math.pow($font-size-factor,0.8)*$font-size-base;
+$font-size-h5:      math.pow($font-size-factor,1)*$font-size-base;
+$font-size-h4:      math.pow($font-size-factor,3)*$font-size-base;
+$font-size-h3:      math.pow($font-size-factor,4)*$font-size-base;
+$font-size-h2:      math.pow($font-size-factor,5)*$font-size-base;
+$font-size-h1:      math.pow($font-size-factor,6)*$font-size-base;
+
+$font-size-h6-m:      math.pow($font-size-factor,0.8)*$font-size-base-m;
+$font-size-h5-m:      math.pow($font-size-factor,1)*$font-size-base-m;
+$font-size-h4-m:      math.pow($font-size-factor,3)*$font-size-base-m;
+$font-size-h3-m:      math.pow($font-size-factor,4)*$font-size-base-m;
+$font-size-h2-m:      math.pow($font-size-factor,5)*$font-size-base-m;
+$font-size-h1-m:      math.pow($font-size-factor,6)*$font-size-base-m;
+
+
+
+  @mixin font-size-h1 {
+    font-size: $font-size-h1;
+    @include breakpoint('sm') {
+      font-size: $font-size-h1-m !important;
+    }
+  }
+
+  @mixin font-size-h2 {
+    font-size: $font-size-h2;
+    @include breakpoint('sm') {
+      font-size: $font-size-h2-m !important;
+    }
+  }
+
+  @mixin font-size-h3 {
+    font-size: $font-size-h3;
+    @include breakpoint('sm') {
+      font-size: $font-size-h3-m !important;
+    }
+  }
+
+  @mixin font-size-h4 {
+    font-size: $font-size-h4;
+    @include breakpoint('sm') {
+      font-size: $font-size-h4-m !important;
+    }
+  }
+  @mixin font-size-h5 {
+    font-size: $font-size-h5;
+    @include breakpoint('sm') {
+      font-size: $font-size-h5-m !important;
+    }
+  }
+
+  @mixin font-size-h6 {
+    font-size: $font-size-h6;
+    @include breakpoint('sm') {
+      font-size: $font-size-h6-m !important;
+    }
+  }
+
+  @mixin font-size-p {
+    font-size: $font-size-p;
+    font-family: Roboto;
+    
+    @include breakpoint('sm') {
+      font-size: 17px !important;
+    }
+  }
+

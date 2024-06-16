@@ -7,17 +7,18 @@ import GridContainer from '/grid/GridContainer';
 
 Header.propTypes = {
   onClick: PropTypes.func,
+  state: PropTypes.bool
 };
 
 
 
 
-export default function Header({onClick}) {
+export default function Header({onClick, state}) {
 
   return (
     <>
       <GridContainer cols="9" color={"black"} base={true}>
-          <Burger onClick={onClick} state={true}></Burger>
+          <Burger onClick={onClick} state={state}></Burger>
       </GridContainer>
     </>
   )}

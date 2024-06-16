@@ -21,7 +21,7 @@ export default function ProjectCredits({credits}) {
           <GridItem cols="1/2" justify={"flex-start"}>
             <span className={styles.credit_key} key={ uuidv4() }>{ key } </span>
           </GridItem>
-          <GridItem cols="2/3" justify={"flex-start"}>
+          <GridItem cols="2/4" justify={"flex-start"}>
             <span className={styles.credit_name} key={ uuidv4() }>{ value }</span>
           </GridItem>
         </>
@@ -32,7 +32,7 @@ export default function ProjectCredits({credits}) {
   return (
       <GridItem cols="2/9" justify={"flex-start"}> 
         <h3 className={styles.container}>Credits:</h3>
-        <GridContainer cols="3" base={false}>
+        <GridContainer style={{marginBottom: "20px"}}cols="3" base={false}>
             {renderCredtis()}
         </GridContainer>
       </GridItem>

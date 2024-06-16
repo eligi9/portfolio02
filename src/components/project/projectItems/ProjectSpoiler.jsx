@@ -42,8 +42,9 @@ export default function ProjectSpoiler({title, type, children, onSelect}) {
 
     if(Array.isArray(images)){
      setImages(imageList)
+    }
   }
-}
+
 
 
 
