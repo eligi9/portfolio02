@@ -1,5 +1,6 @@
 
 import PropTypes from 'prop-types';
+import styles from "/css/components/navigation/Header.module.scss";
 
 import Burger from "/components/navigation/Burger.jsx";
 
@@ -17,7 +18,7 @@ export default function Header({onClick, state}) {
 
   return (
     <>
-      <GridContainer cols="9" color={"black"} base={true}>
+      <GridContainer cols="9" base={true}>
           <Burger onClick={onClick} state={state}></Burger>
       </GridContainer>
     </>
