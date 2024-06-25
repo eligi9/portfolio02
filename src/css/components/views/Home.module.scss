@@ -1,5 +1,6 @@
 @import 'View';
 
+
 .letters {
   font-family: Biryani, Times, serif;
   font-weight: bold;
@@ -7,6 +8,11 @@
   line-height: 90%;
   letter-spacing: -12px;
   display: block;
+
+  @include breakpoint('sm') {
+    font-size: 60px !important;
+    letter-spacing: -6px;
+  }
 }
 
 .small {
@@ -17,4 +23,15 @@
   line-height: 150%;
   letter-spacing: -4px;
   display: block;
+  @include breakpoint('sm') {
+    font-size: 30px !important;
+    letter-spacing: -2px;
+  }
+}
+
+.frontImage {
+  max-width: 20%;
+  position: absolute;
+  z-index: 300;
+  //mix-blend-mode: difference;
 }

@@ -31,14 +31,16 @@ function App() {
 
   return (
     <>
-      <Header onClick={toggleMenu}/>
+      <header>
+        <Header onClick={toggleMenu} state={!menueOpened}/>
+      </header>
       <main>
         {currentSection === "home" && <Home/>}
         {currentSection === "Xproject" && <ProjectView />}
         {currentSection === "project" && <Projects></Projects>}
         {currentSection === "privatpolicy" && <PrivatPolicy/>}
         {currentSection === "imprint" && <Imprint/>}
-        {menueOpened && <Menue onClick={toggleMenu}/>}
+        {menueOpened && <Menue onClick={toggleMenu} />}
       </main>
       <Footer/>
     </>

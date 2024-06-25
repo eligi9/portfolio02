@@ -5,6 +5,9 @@ img {
     object-fit: scale-down;
     flex-grow: 1;
     flex-shrink: 0;
+    @include breakpoint('sm') {
+      height: $image-height-m;
+    }
   
   }
   &.landscape{
@@ -12,5 +15,8 @@ img {
     object-fit: cover;
     object-position: 50% 50%;
     flex-grow: 2;
+    @include breakpoint('sm') {
+      height: $image-height-m;
+    }
   }
 }

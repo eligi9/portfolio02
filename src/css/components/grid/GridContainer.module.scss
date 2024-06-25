@@ -30,12 +30,16 @@
     grid-template-columns: repeat(9, 1fr);
   }
 
+  &.gc_3{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &.gc_4{
     grid-template-columns: repeat(4, 1fr);
   }
   &.base{
     width: 100vw;
-    gap: 20px
-    //min-height: 100vh;
+    gap: 20px;
+   //min-height: 100vh;
   }
 }

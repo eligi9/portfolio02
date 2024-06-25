@@ -7,5 +7,12 @@
     width: 100%;
 }
 
+.baseItem {
+    @include breakpoint('sm') {
+        grid-column: 1/10 !important;
+        padding: 0px 20px;
+    }
+}
+
 
 

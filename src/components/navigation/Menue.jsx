@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import Burger from '/components/navigation/Burger.jsx';
 import MenueItem from '/components/navigation/MenueItem.jsx';
 
+import styles from"/css/components/navigation/Menue.module.scss";
+
 import {useDispatch} from 'react-redux';
 import {updateSection} from '/state/currentSectionSlice';
 
@@ -36,14 +38,13 @@ export default function Menue({onClick}) {
       <Overlay color="#000" 
                  backgroundOpacity={0.85} blur={10} pos="fixed" style={{zIndex: 3000}}>
         <GridContainer cols="9" base={true}>
-          <GridItem cols="3/8">
-            <Stack h={"100vh"} w={"100%"} justify="center" align='center'>
-              <MenueItem onClick={() => changeSection("home")}>Home</MenueItem>
-              <MenueItem onClick={() => changeSection("project")}>Projects</MenueItem>
-              <MenueItem onClick={() => changeSection("about")}>About</MenueItem>
-            </Stack>
-          </GridItem>
-         <Burger state={false} onClick={closeMenue}/>
+            <GridItem cols="2/9">
+                <nav className={styles.navigation}>
+                  <MenueItem onClick={() => changeSection("home")}>Home</MenueItem>
+                  <MenueItem onClick={() => changeSection("project")}>Projects</MenueItem>
+                  <MenueItem onClick={() => changeSection("about")}>About</MenueItem>
+                </nav>
+            </GridItem>
         </GridContainer>       
       </Overlay>
   );
