@@ -6,6 +6,7 @@ import {getJson} from '/service/getData.js'
 export const getProject = createAsyncThunk(
   "project/getProject",
     async (project, thunkAPI) => {
+      console.log("getProject: " + project)
       try {
         const response = await getJson(`/json/projects/${project}.json`)
         return response
@@ -19,7 +20,7 @@ export const getProject = createAsyncThunk(
 
 
 const initialState = {
-  project: {name: "", type: ""},
+  project: null,
   isSuccess: false,
   isLoading: false,
   message: "",
@@ -27,13 +28,16 @@ const initialState = {
 
 const currentProjectSlice = createSlice({
   name: 'project',
-  project: [],
+  project: Object || null,
   isLoading: Boolean,
   isSuccess: Boolean,
   message: String,
   initialState,
 
   reducers: {
+    resetProject: (state) => {
+        state.project = null;
+    },
 
   },
   extraReducers: (builder) => {
@@ -55,6 +59,6 @@ const currentProjectSlice = createSlice({
   },
 });
 
-//export const { increment, decrement, incrementByAmount } = projectSlice.actions;
+export const { resetProject } = currentProjectSlice.actions;
 
 export default currentProjectSlice;

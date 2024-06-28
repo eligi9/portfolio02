@@ -1,15 +1,15 @@
 
-import {Overlay, Stack} from '@mantine/core';
+import {Overlay} from '@mantine/core';
 import GridContainer from '/grid/GridContainer';
 import GridItem from '/grid/GridItem';
 import PropTypes from 'prop-types';
-import Burger from '/components/navigation/Burger.jsx';
 import MenueItem from '/components/navigation/MenueItem.jsx';
 
 import styles from"/css/components/navigation/Menue.module.scss";
 
 import {useDispatch} from 'react-redux';
-import {updateSection} from '/state/currentSectionSlice';
+import { updateSection } from '/state/currentSectionSlice';
+import { resetProject } from '/state/currentProjectSlice';
 
 
 Menue.propTypes = {
@@ -29,6 +29,9 @@ export default function Menue({onClick}) {
   };
 
   const changeSection = (p_destination) => {
+    if (p_destination === "project") {
+      dispatch(resetProject(null));
+    }
     dispatch(updateSection(p_destination));
     closeMenue();
   };

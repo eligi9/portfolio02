@@ -1,0 +1,28 @@
+@import 'About';
+
+.text {
+  color: $smooth-black;
+}
+
+
+.top_h {
+  color: $smooth-black;
+  & h2 {
+    font-size: 2.5vw;
+  }
+
+}
+
+
+.bold {
+  color: $smooth-black;
+  font-weight: bold;
+  font-family: $font-bir;
+
+}
+
+.light {
+  color: $smooth-black;
+  font-weight: 200;
+  font-family: $font-bir;
+}

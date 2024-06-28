@@ -2,6 +2,7 @@
   "name": "Easy Jam",
   "description": "Easy Jam ist eine Webapplikation die dafür ausgelegt ist, das Musizieren für Anfänger zu erleichtern. Ein Einstieg in die Welt der Musik bedarf Geduld, Zeit und Übung. Am besten lernt man, wenn man sich mit anderen Leuten zusammen setzt und spielt. Problem: Wenn man jedoch völlig am Anfang steht, ist es schwer direkt in einer Band zu spielen. Oft ist das Netzwerk an anderen Musikern die man kennt, sehr beschränkt. Alleine zuhause zu üben geht natürlich, ist aber auf Dauer langweilig. Easy Jam bietet Einsteigern in der Musik die Möglichkeit Jam-Tracks auf intuitive Weise per Drag und Drop zu erstellen. Dabei wird das Gefühl für Töne Harmonien und Tempo spielerisch geschult.",
   "type": "Webapp, Education",
+  "skills": ["javascript", "sass", "figma", "illustrator"],
   "version": "1.0.0",
   "video": "https://www.youtube.com/embed/F6xsKmUXmDk?si=i2ysWXkc8jiz1_T9",
   "content": {

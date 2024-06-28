@@ -29,7 +29,11 @@ export default function Burger({onClick, state}) {
   useEffect(() => {
     state ? handlers.open() : handlers.close();
   }, [state]);
+ 
 
+  useEffect(() => { 
+    console.log(burger)
+  }, []);
   
 
   return (

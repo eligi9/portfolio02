@@ -37,13 +37,9 @@ export default function GridContainer({cols, rows, color, children, base, style}
     setConatinerType(initalizeGridContainer());
   },[initalizeGridContainer])
 
-  useEffect(() => {
-    console.log(container.current.classList)
-  }, [containerType])
 
   useEffect(() => {
     setStyle();
-    //console.log(container.current.classList)
   }, []);
 
 

@@ -1,0 +1,28 @@
+@import 'config';
+
+
+
+ul {
+  font-family: Roboto;
+  font-size: $font-size-p !important;
+  font-weight: 300;
+  padding-top: 1.5vw;
+  padding-bottom: 0.75vw;
+  padding-left: 6vw;
+
+
+}
+
+ol li::before { 
+  font-family: $font-family-Bold;
+}
+
+li {
+  @include font-size-p;
+}
+
+footer {
+  position: relative;
+  z-index: 3000;
+  background-color: $smooth-black;
+}

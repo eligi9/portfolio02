@@ -8,7 +8,10 @@
 }
 
 html {
-  background-color: black;
+  background-color: $smooth-black;
+  //cursor: $base-cursor;
+  //cursor:url('../assets/icons/cursor.svg'), auto;
+
 }
 
 body {
@@ -18,6 +21,7 @@ body {
 main {
   //min-height: 100vh;
   background-color: $smooth-white;
+  padding: 3em 0;
   p{
     @include font-size-p;
   }
@@ -30,3 +34,4 @@ header {
   background-color: $smooth-black;
   z-index: 3100;
 }
+

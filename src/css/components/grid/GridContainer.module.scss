@@ -38,8 +38,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
   &.base{
-    width: 100vw;
+    max-width: 100vw;
     gap: 20px;
-   //min-height: 100vh;
+    //min-height: 90vh;
   }
 }

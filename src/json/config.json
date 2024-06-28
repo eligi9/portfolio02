@@ -2,5 +2,13 @@
   "projects": ["riss", "lonisweltraumreise", "easyjam"],
   "defaultProject": "easyjam",
   "apiRoot": "/json/projects/$1.json",
-  "defaultSection": "home"
+  "defaultSection": "home",
+  "iconsPath": "/icons/skills/$1.svg",
+  "iconsPathBlack": "/icons/skills/black/$1.svg",
+
+  "skills": {
+    "gestaltung": ["aftereffects", "premiere", "illustrator", "figma", "flstudio"],
+    "informatik": ["react", "vue", "git", "javascript", "vscode", "django", "sql"]
+  },
+  "contact": ["linkedin", "github", "instagram","soundcloud", "youtube"]
 }
