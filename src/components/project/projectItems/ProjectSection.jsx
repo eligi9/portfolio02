@@ -33,7 +33,6 @@ export default function ProjectSection({currentSection}) {
   return (
     <>
         <GridItem cols="2/9" justify={"flex-start"}>
-          {console.log(currentSection)}
             <Stack gap={"sm"} align='flex-start' justify='space-between'  className={styles.section}>
               {currentSection.title !== "" && <SectionHeading title={currentSection.title}/>}
                 { renderTextSections() }

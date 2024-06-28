@@ -17,6 +17,8 @@ import ProjectSection from '/projectItems/ProjectSection';
 import ProjectCredits from '/projectItems/ProjectCredits';
 
 import ImageGroup from '/components/image/ImageGroup';
+import SkillIconContainer from '../about/SkillIconContainer';
+import GridItem from '../grid/GridItem';
 
 EasyJam.propTypes = {
   currentProject: PropTypes.object.isRequired
@@ -37,6 +39,9 @@ export default function EasyJam({currentProject}) {
           <ProjectSection currentSection={currentProject.content.Individualisierbarkeit}></ProjectSection>
           <ImageGroup images={[img_individualisierung]}></ImageGroup>
           <ProjectSection currentSection={currentProject.content.Technologien}></ProjectSection>
+          <GridItem cols='2/9' base>
+           <SkillIconContainer black icons={currentProject.skills}/>
+          </GridItem>
           <ProjectCredits credits={currentProject.credits}></ProjectCredits>
         </GridContainer>
 

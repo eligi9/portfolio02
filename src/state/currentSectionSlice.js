@@ -9,7 +9,6 @@ const initialState = {
 
 const currentSectionSlice = createSlice({
   name: 'currentSection',
-  currentSection: "",
   initialState,
   reducers: {
     updateSection: (state, action) => {

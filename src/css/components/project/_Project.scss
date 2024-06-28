@@ -27,10 +27,7 @@ h3 {
 
 h4 {
   line-height: 100%;
-  font-family: $font-family-Regular, Times, serif;
   @include font-size-h4;
-  font-weight: 500;
-
 }
 
 h5 {

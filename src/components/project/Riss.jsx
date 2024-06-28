@@ -15,6 +15,7 @@ import img11 from '/assets/images/riss/riss_11.png'
 import img12 from '/assets/images/riss/riss_12.png'
 
 import GridContainer from "/grid/GridContainer";
+import GridItem from "/grid/GridItem";
 
 import ProjectHeading from '/projectItems/ProjectHeading';
 import ProjectVideo from '/projectItems//ProjectVideo';
@@ -22,6 +23,7 @@ import ProjectSection from '/projectItems//ProjectSection';
 import ProjectDescription from '/projectItems//ProjectDescription';
 import ProjectCredits from '/projectItems/ProjectCredits';
 
+import SkillIconContainer from '/about/SkillIconContainer';
 import ImageGroup from '/components/image/ImageGroup';
 
 Riss.propTypes = {
@@ -48,6 +50,9 @@ export default function Riss({currentProject}) {
           <ImageGroup images={[ img10]}></ImageGroup>
           <ProjectSection currentSection={currentProject.content.Greenscreening}></ProjectSection>
           <ImageGroup images={[ img11, img12]}></ImageGroup>
+          <GridItem cols='2/9' base>
+           <SkillIconContainer black icons={currentProject.skills}/>
+          </GridItem>
           <ProjectCredits credits={currentProject.credits}></ProjectCredits>
         </GridContainer>
 

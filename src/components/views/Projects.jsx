@@ -1,5 +1,3 @@
-
-import { useState, useEffect } from 'react';
 import GridContainer from '/grid/GridContainer';
 
 import ProjectSpoiler from '/projectItems/ProjectSpoiler';
@@ -7,9 +5,9 @@ import ProjectView from '/components/project/ProjectView'
  
 
 import { useSelector, useDispatch } from "react-redux";
-import { getProject } from '/state/currentProjectSlice'
 
 import { v4 as uuidv4 } from 'uuid';
+import { getProject } from '../../state/currentProjectSlice';
 
 Projects.propTypes = {
 
@@ -18,21 +16,17 @@ Projects.propTypes = {
 
 export default function Projects() {
   const allProjects = useSelector((state) => state.allProjects.projects)
+  const currentProject = useSelector((state) => state.currentProject.project)
   const dispatch = useDispatch();
-  const [selected, setSelected] = useState(false);
 
 
 
 
   const changeProject = (project) => {
     console.log(project)
+    //name to lowercase && and spaces removed
     dispatch(getProject(project.toLowerCase().replace(/ /g, '')))
-    setSelected(true)
   }
-
-  useEffect(() => {  
-
-  },[])
 
 
 
@@ -47,8 +41,8 @@ export default function Projects() {
 
   return (
     <>
-      {!selected && <GridContainer cols='9' base={true}> {renderProjects} </GridContainer>}
-      {selected && <ProjectView/>}
+      {!currentProject && <GridContainer cols='9' base={true}> {renderProjects} </GridContainer>}
+      {currentProject && <ProjectView/>}
     </>
   );
 }

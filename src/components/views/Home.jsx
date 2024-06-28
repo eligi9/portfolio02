@@ -13,7 +13,7 @@ import { useMouse } from '@mantine/hooks';
 export default function Home() {
    const myImg = useRef(null);
    const imgBB = useRef(null);
-   const { ref, x, y } = useMouse();
+   const { x, y } = useMouse();
 
    useEffect(() => {
     imgBB.current = myImg.current.getBoundingClientRect();

@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux'
 import { useDisclosure } from '@mantine/hooks'
 import Menue from '/components/navigation/Menue.jsx'
 import Home from '/components/views/Home.jsx'
+import About from '/components/views/About.jsx'
 import Projects from '/components/views/Projects.jsx'
 import Footer from '/components/footer/Footer'
 import Imprint from '/components/footer/Imprint'
@@ -40,6 +41,7 @@ function App() {
         {currentSection === "project" && <Projects></Projects>}
         {currentSection === "privatpolicy" && <PrivatPolicy/>}
         {currentSection === "imprint" && <Imprint/>}
+        {currentSection === "about" && <About></About>}
         {menueOpened && <Menue onClick={toggleMenu} />}
       </main>
       <Footer/>
