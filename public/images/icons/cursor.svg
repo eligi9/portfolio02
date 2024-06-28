@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.66 94.66">
+  <defs>
+        <style>
+      .cls-1 {
+        fill: #9b5d5c;
+        mix-blend-mode: difference;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+    </style>
+
+  </defs>
+  <g class="cls-2">
+    <g id="Ebene_2" data-name="Ebene 2">
+      <g id="Ebene_1-2" data-name="Ebene 1">
+        <circle class="cls-1" cx="47.33" cy="47.33" r="44.33"/>
+      </g>
+    </g>
+  </g>
+</svg>
