@@ -8,4 +8,8 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 2em 0;
+  @include breakpoint('sm') {
+    align-items: center;
+    justify-content: center;
+  }
 }

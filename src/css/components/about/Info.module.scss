@@ -1,0 +1,24 @@
+@import 'About';
+
+.info_image {
+  width: 20%;
+  position: absolute;
+  z-index: 300;
+
+  @include breakpoint('sm') {
+    width: 100%;
+    position: static;
+    z-index: 0;
+  }
+}
+
+.top_t {
+  padding-top: 50vh;
+
+  @include breakpoint('sm') {
+    padding-top: 0vh;
+  }
+ 
+
+
+}

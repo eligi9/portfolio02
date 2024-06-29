@@ -2,16 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@300..700&family=Dosis:wght@200..800&display=swap');
 
-
-
-
-$smooth-black:  #181818;
-$smooth-white:  #f3f3f3;
-$smooth-blue: #2C3E50;
-$smooth-grey: #3C3C3C;
-
-$base-grid-size: 9;
-
+// FONT FAMILY VARIABLES //
 $font-family-sans:  Verdana, Helvetica, sans-serif;
 $font-family-serif: "Times New Roman", Times, serif;
 
@@ -20,31 +11,65 @@ $font-family-Light: "Dosis", Times, serif;
 $font-family-Medium: "Dosis", Times, serif;
 $font-family-Bold: "Dosis", Times, serif;
 
-$comfortable-line-height: 1.5;
-
 $font-bir : Biryani, Helvetica, sans-serif;
 
+// BASE COLORS //
 
+$smooth-black:  #181818;
+$smooth-white:  #f3f3f3;
+$smooth-blue: #2C3E50;
+$smooth-grey: #3C3C3C;
 
-$font-size-base :    0.8vw;
-$font-size-base-m :    0.8vh;
+$base-grid-size: 9;
+$comfortable-line-height: 1.5;
 $layout-breakpoint-small: 960px;
-$font-size-factor:  1.4;  /* cmp. https://type-scale.com/ */
 
 $base-cursor: url('../assets/icons/cursor.svg') 10 10, auto;
 
+// HEADER SIZE VARIABLES //
+$font-size-factor: 1.4;  /* cmp. https://type-scale.com/ */
+$font-size-base  : 0.8vw;
+$font-size-base-m: 0.8vh;
+
+
+$font-size-h6:      math.pow($font-size-factor,0.8)*$font-size-base;
+$font-size-h5:      math.pow($font-size-factor,1)*$font-size-base;
+$font-size-h4:      math.pow($font-size-factor,2)*$font-size-base;
+$font-size-h3:      math.pow($font-size-factor,3.8)*$font-size-base;
+$font-size-h2:      math.pow($font-size-factor,4.2)*$font-size-base;
+$font-size-h1:      math.pow($font-size-factor,5)*$font-size-base;
+
+$font-size-h6-m:      math.pow($font-size-factor,0.8)*$font-size-base-m;
+$font-size-h5-m:      math.pow($font-size-factor,1)*$font-size-base-m;
+$font-size-h4-m:      math.pow($font-size-factor,4)*$font-size-base-m;
+$font-size-h3-m:      math.pow($font-size-factor,5)*$font-size-base-m;
+$font-size-h2-m:      math.pow($font-size-factor,5.5)*$font-size-base-m;
+$font-size-h1-m:      math.pow($font-size-factor,6)*$font-size-base-m;
 
 
 
 
 
+// IMAGE HEIGHT VARIABLES //
 
 $image-height-base:    10vw;
 $image-height-base-m:    11vh;
 $image-size-factor:    1.4;
+
+
 $image-height:      math.pow($image-size-factor, 2)*$image-height-base;
 $image-height-m:    math.pow($image-size-factor, 2)*$image-height-base-m;
 
+// ICON HEIGHT VARIABLES //
+$icon-height-base:    3vw;
+$icon-height-base-m:  4vh;
+$icon-size-factor: 1.4;
+
+$icon-height:      math.pow($icon-size-factor, 2)*$icon-height-base;
+$icon-height-m:    math.pow($icon-size-factor, 2)*$icon-height-base-m;
+
+
+// FONT-SIZE FOR P //
 
 //$font-size-p:       math.pow($font-size-factor,1.5)*$font-size-base;
 $font-size-p: 21px;
@@ -52,6 +77,7 @@ $font-size-p-large: math.pow($font-size-factor,2)*$font-size-base;
 
 $font-size-small:   math.pow($font-size-factor,-1)*$font-size-base;
 
+// BREAKPOINTS AND BEHAVIOURS //
 
 $breakpoints: (
   xs: 0,
@@ -66,21 +92,6 @@ $breakpoints: (
       @content;
     }
   }
-  $font-size-h6:      math.pow($font-size-factor,0.8)*$font-size-base;
-  $font-size-h5:      math.pow($font-size-factor,1)*$font-size-base;
-  $font-size-h4:      math.pow($font-size-factor,2)*$font-size-base;
-  $font-size-h3:      math.pow($font-size-factor,3.8)*$font-size-base;
-  $font-size-h2:      math.pow($font-size-factor,4.2)*$font-size-base;
-  $font-size-h1:      math.pow($font-size-factor,5)*$font-size-base;
-
-$font-size-h6-m:      math.pow($font-size-factor,0.8)*$font-size-base-m;
-$font-size-h5-m:      math.pow($font-size-factor,1)*$font-size-base-m;
-$font-size-h4-m:      math.pow($font-size-factor,4)*$font-size-base-m;
-$font-size-h3-m:      math.pow($font-size-factor,5)*$font-size-base-m;
-$font-size-h2-m:      math.pow($font-size-factor,5.5)*$font-size-base-m;
-$font-size-h1-m:      math.pow($font-size-factor,6)*$font-size-base-m;
-
-
 
 
   @mixin font-size-h1 {
@@ -134,4 +145,3 @@ $font-size-h1-m:      math.pow($font-size-factor,6)*$font-size-base-m;
       font-size: 17px !important;
     }
   }
-

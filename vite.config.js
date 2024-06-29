@@ -22,7 +22,7 @@ export default defineConfig({
       '/json':   fileURLToPath(new URL('./public/json', import.meta.url)),
       '/images':   fileURLToPath(new URL('./src/assets/images', import.meta.url)),
       '/about':   fileURLToPath(new URL('./src/components/about', import.meta.url)),
-      '/icons':   fileURLToPath(new URL('./src/assets/icons', import.meta.url))
+      '/icons':   fileURLToPath(new URL('./public/icons', import.meta.url))
     }
   },
   build: 

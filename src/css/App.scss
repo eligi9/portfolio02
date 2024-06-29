@@ -21,7 +21,6 @@ body {
 main {
   //min-height: 100vh;
   background-color: $smooth-white;
-  padding: 3em 0;
   p{
     @include font-size-p;
   }

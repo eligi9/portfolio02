@@ -41,7 +41,7 @@ export default function Projects() {
 
   return (
     <>
-      {!currentProject && <GridContainer cols='9' base={true}> {renderProjects} </GridContainer>}
+      {!currentProject && <GridContainer style={{padding: "5vh 0px"}} cols='9' base={true}> {renderProjects} </GridContainer>}
       {currentProject && <ProjectView/>}
     </>
   );
