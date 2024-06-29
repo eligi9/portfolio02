@@ -1,5 +1,5 @@
 //import styles from '/css/components/views/Home.module.scss';
-import styles from '/css/components/about/Skills.module.scss';
+import styles from '/css/components/about/SkillIcon.module.scss';
 import PropTypes from 'prop-types';
 import config    from '@/json/config.json'
 import { useEffect } from 'react';
@@ -24,6 +24,6 @@ export default function SkillIcon({url, black}) {
   }, []);
 
   return (
-      <img src={buttonImage}></img>
+      <img className={styles.icon_image} src={buttonImage}></img>
   );
 }

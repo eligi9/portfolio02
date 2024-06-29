@@ -23,8 +23,8 @@ export default function Contact() {
 
 
   return (
-      <GridContainer style={{ minHeight: "100vh"}} cols='9' base={true}>
-        <GridItem style={{margin: "20vh 0"}} cols='2/9' base>
+      <GridContainer style={{padding: "5vh 0px", minHeight: "100vh"}} cols='9' base={true}>
+        <GridItem cols='2/9' base>
             <h1 className={styles.top_h} style={{width: "100%"}}>
               <span className={styles.light}>GET </span>
               <span className={styles.bold}>IN </span>

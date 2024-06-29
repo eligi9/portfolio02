@@ -36,7 +36,7 @@ export default function ProjectSpoiler({title, type, children, onSelect}) {
   
     for (let i = 1; i < 4; i++){
       let a = await import(`../../../assets/images/${imagepath}/front${i}.png`)
-      console.log(typeof(a.default))
+      //console.log(typeof(a.default))
       imageList.push(a.default)
     }
 
@@ -51,7 +51,7 @@ export default function ProjectSpoiler({title, type, children, onSelect}) {
   return (
     <>
       <GridItem cols="2/9" justify="flex-start">
-        <Stack m={"lg"}>
+        <Stack>
           <div className={styles.headerContainer}>
             <h1 className={styles.h1}> {title} </h1>
             <h2 className={styles.h2}> {type} </h2>

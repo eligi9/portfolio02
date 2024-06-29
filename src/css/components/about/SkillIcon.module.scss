@@ -1,0 +1,8 @@
+@import 'About';
+
+.icon_image {
+  height: $icon-height;
+  @include breakpoint('sm') {
+    height: $icon-height-m !important;
+  }
+}

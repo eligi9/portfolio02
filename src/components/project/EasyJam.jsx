@@ -30,7 +30,7 @@ EasyJam.propTypes = {
 export default function EasyJam({currentProject}) {
 
   return (
-        <GridContainer cols="9" base={true}>
+        <GridContainer style={{padding: "5vh 0px"}} cols="9" base={true}>
           <ProjectHeading project={currentProject.name} type={currentProject.type}></ProjectHeading>
           <ProjectVideo video={currentProject.video}/>
           <ProjectDescription title={currentProject.name} > { currentProject.description } </ProjectDescription>
