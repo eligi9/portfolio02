@@ -1,0 +1,26 @@
+@import 'Skills';
+
+
+.cardContainer {
+  grid-template-columns: repeat(4, 1fr) !important  ;
+  background-color: $smooth-white;
+  height:100%;
+
+
+
+
+}
+
+.icon_image {
+  grid-column: 1 / 2;
+}
+
+.card_text {
+  grid-column: 2 / 5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

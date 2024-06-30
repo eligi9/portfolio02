@@ -5,7 +5,8 @@ import styles from '/css/components/about/Skills.module.scss';
 
 import config from '@/json/config.json';
 
-import SkillIconContainer from './SkillIconContainer';
+import SkillIconContainer from '/about/skills/SkillIconContainer';
+import SkillSection from '/about/skills/SkillSection';
 import { useEffect } from 'react';
 
 
@@ -28,12 +29,15 @@ export default function Skills() {
               <span className={styles.light}>MY </span>
               <span className={styles.bold}>SKILLS</span>
             </h1>
-            <h2 className={styles.top_h}>Informatik</h2>
-            <p className={styles.text}>Für die Umsetzung von Prototypen als Frontend oder Fullstack-Webanwendungen habe ich Erfahrung mit folgenden Tools.</p>
-            <SkillIconContainer icons={config.skills.informatik}/>
-            <h2 className={styles.top_h}>Gestaltung</h2>
-            <p className={styles.text}>Für die Konzeption, Animation und Präsentation verwende ich Regelmäßig diese Tools</p>
-            <SkillIconContainer icons={config.skills.gestaltung}/>
+
+            <SkillSection type="informatik"> 
+              Für die Umsetzung von Prototypen als Frontend oder Fullstack-Webanwendungen habe ich Erfahrung mit folgenden Tools.
+            </SkillSection>
+
+            <SkillSection type="gestaltung">
+              Für die Konzeption, Animation und Präsentation verwende ich Regelmäßig diese Tools 
+            </SkillSection>
+          
         </GridItem>
       </GridContainer>
 

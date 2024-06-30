@@ -13,7 +13,7 @@ import { useMouse } from '@mantine/hooks';
 export default function Home() {
    const myImg = useRef(null);
    const imgBB = useRef(null);
-   const { x, y } = useMouse();
+   const { ref, x, y } = useMouse();
 
    useEffect(() => {
     imgBB.current = myImg.current.getBoundingClientRect();
@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <GridContainer style={{height: "90vh"}} cols='9' base={true}>
+      <GridContainer ref={ref} style={{height: "90vh"}} cols='9' base={true}>
           <img style={{top:y-100, left:x-100}} ref={myImg} className={styles.frontImage} src={img1}></img>
         <GridItem cols='2/9' base>
           <Stack w="100%" h="100%" align="flex-start" justify="center" gap={"0px"}>

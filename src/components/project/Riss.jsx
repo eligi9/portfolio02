@@ -23,7 +23,7 @@ import ProjectSection from '/projectItems//ProjectSection';
 import ProjectDescription from '/projectItems//ProjectDescription';
 import ProjectCredits from '/projectItems/ProjectCredits';
 
-import SkillIconContainer from '/about/SkillIconContainer';
+import SkillIconContainer from '/about/skills/SkillIconContainer';
 import ImageGroup from '/components/image/ImageGroup';
 
 Riss.propTypes = {

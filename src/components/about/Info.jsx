@@ -16,7 +16,7 @@ import { useMouse } from '@mantine/hooks';
 
 export default function Info() {
 
-  const { x, y } = useMouse();
+  const {ref, x, y } = useMouse({ resetOnExit: true });
 
   useEffect(() => {
     console.log(config.skills.gestaltung)
@@ -25,7 +25,7 @@ export default function Info() {
 
 
   return (
-    <GridContainer style={{padding: "5vh 0px", minHeight: "100vh"}} cols='9' base={true}>
+    <GridContainer ref={ref} style={{padding: "5vh 0px", minHeight: "100vh"}} cols='9' base={true}>
         <GridItem cols='2/9' base>
             <img src={img1} style={{top:y-100, left:x-100}} className={styles.info_image}></img>
             <h1 className={`${styles.top_h} ${styles.top_t}`} style={{width: "100%"}}>
@@ -36,7 +36,6 @@ export default function Info() {
               Meine Leidenschaft liegt in der Konzeption und Ausarbeitung von Apps und Webanwendungen, die nicht nur funktional, sondern auch ästhetisch ansprechend sind.
               Für mich steht im Mittelpunkt, konsistente und ansprechende Designs zu schaffen, die dem Puls der Zeit entsprechen und den Benutzern ein immersives Erlebnis bieten können. 
             </p>
-     
         </GridItem>
       </GridContainer>
   );

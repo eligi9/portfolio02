@@ -10,5 +10,12 @@
     "gestaltung": ["aftereffects", "premiere", "illustrator", "figma", "flstudio"],
     "informatik": ["react", "vue", "git", "javascript", "vscode", "django", "sql"]
   },
-  "contact": ["linkedin", "github", "instagram","soundcloud", "youtube"]
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/elias-ginter-9a55671a0/",
+    "github": "https://github.com/eligi9",
+    "instagram": "https://www.instagram.com/eligi9/",
+    "youtube": "https://www.youtube.com/channel/UCxsuWwbmCfJbhpeJJxFhMhw",
+    "soundcloud": "https://soundcloud.com/user-628460177-629700480"
+  }
 }
+
