@@ -1,1 +1,10 @@
 @import 'About';
+
+.contact_icons{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ gap: 3em;
+ padding-top: 50px;
+}

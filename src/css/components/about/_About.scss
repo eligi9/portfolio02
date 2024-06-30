@@ -3,6 +3,7 @@
 .top_h {
   color: $smooth-black;
   font-size: 48px;
+  padding: 20px 0;  
   span {
 
     &.bold {
@@ -20,8 +21,8 @@
       text-align: center;
     }
   }
-
 }
+
 
 .text {
   color: $smooth-black;

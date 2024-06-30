@@ -1,0 +1,18 @@
+@import 'Skills';
+
+.sec_h {
+  color: $smooth-white;
+  font-weight: 200;
+  font-family: $font-bir;
+  font-size: 32px;
+  letter-spacing: 1em;
+
+  @include breakpoint('sm') {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.text {
+  color: $smooth-white;
+}

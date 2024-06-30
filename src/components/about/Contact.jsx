@@ -6,15 +6,25 @@ import styles from '/css/components/about/Contact.module.scss';
 import {Group} from '@mantine/core';  
 import config from '@/json/config.json';
 
-import SkillIconContainer from './SkillIconContainer';
-import SkillIcon from './SkillIcon';
+import SkillIcon from '/about/skills/SkillIcon';
 import { useEffect } from 'react';
+
+import { v4 as uuidv4 } from 'uuid';
 
 
 
 
 
 export default function Contact() {
+
+  const 
+  renderLinks = () => {
+    console.log("renderLinks")
+    return Object.entries(config.contact).map(([key, skill]) => {
+      return( <SkillIcon key={uuidv4()} src={key} url={skill} black/>)
+    })
+  }
+   
 
   useEffect(() => {
     console.log(config.skills.gestaltung)
@@ -33,10 +43,13 @@ export default function Contact() {
             <p className={styles.text}>I&apos;LL BE HAPPY TO WORK WITH YOU ON ANY CREATIVE PROJECT</p>
             <p className={styles.text}>Elias Ginter</p>
             <Group h={"40px"}>
-              <SkillIcon url={"mail"} black></SkillIcon>
+              <SkillIcon src={"mail"} black still></SkillIcon>
               <p className={styles.text}>eligi9@gmx.de</p>
             </Group>
-            <SkillIconContainer black icons={config.contact}/>
+            <div className={styles.contact_icons}>
+              {renderLinks()}
+            </div>
+            
         </GridItem>
       </GridContainer>
 

@@ -17,8 +17,8 @@ import ProjectSection from '/projectItems/ProjectSection';
 import ProjectCredits from '/projectItems/ProjectCredits';
 
 import ImageGroup from '/components/image/ImageGroup';
-import SkillIconContainer from '../about/SkillIconContainer';
-import GridItem from '../grid/GridItem';
+import SkillIconContainer from '/about/skills/SkillIconContainer';
+import GridItem from '/grid/GridItem';
 
 EasyJam.propTypes = {
   currentProject: PropTypes.object.isRequired

@@ -5,8 +5,7 @@ import Info from '@/components/about/Info';
 
 import styles from '/css/components/about/Contact.module.scss';
 
-import GridContainer from '/grid/GridContainer';
-import GridItem from '/grid/GridItem';
+import SkillCard from '/about/skills/SkillCard';
 
 
 

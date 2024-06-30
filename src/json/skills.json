@@ -1,0 +1,76 @@
+{
+  
+    "aftereffects": {
+      "beschreibung": "Software für Motion Graphics und visuelle Effekte.",
+      "niveau": 85
+    },
+    "premiere": {
+      "beschreibung": "Videobearbeitungssoftware für Filmemacher.",
+      "niveau": 80
+    },
+    "illustrator": {
+      "beschreibung": "Vektorgrafikdesign-Software.",
+      "niveau": 75
+    },
+    "figma": {
+      "beschreibung": "Kollaboratives Interface-Design-Tool.",
+      "niveau": 70
+    },
+    "flstudio": {
+      "beschreibung": "Digital Audio Workstation für Musikproduktion.",
+      "niveau": 65
+    },
+    "react": {
+      "beschreibung": "JavaScript-Bibliothek für den Bau von Benutzeroberflächen.",
+      "niveau": 85
+    },
+    "vue": {
+      "beschreibung": "Progressives JavaScript-Framework für Benutzeroberflächen.",
+      "niveau": 80
+    },
+    "git": {
+      "beschreibung": "Versionskontrollsystem zur Verfolgung von Quellcodeänderungen.",
+      "niveau": 90
+    },
+    "javascript": {
+      "beschreibung": "Programmiersprache für Webentwicklung.",
+      "niveau": 88
+    },
+    "vscode": {
+      "beschreibung": "Quellcode-Editor von Microsoft.",
+      "niveau": 85
+    },
+    "django": {
+      "beschreibung": "Hochwertiges Python-Webframework.",
+      "niveau": 75
+    },
+    "sql": {
+      "beschreibung": "Sprache zur Verwaltung von Datenbanken.",
+      "niveau": 80
+    },
+    "lottie": {
+      "beschreibung": "Bibliothek für Animationen in Web- und Mobilanwendungen.",
+      "niveau": 70
+    },
+    "sass": {
+      "beschreibung": "Präprozessor für CSS, der erweiterte Funktionen bietet.",
+      "niveau": 75
+    },
+    "vite": {
+      "beschreibung": "Schnelles Entwicklungswerkzeug für moderne Webprojekte.",
+      "niveau": 80
+    },
+    "redux": {
+      "beschreibung": "State-Management-Bibliothek für JavaScript-Anwendungen.",
+      "niveau": 75
+    },
+    "python": {
+      "beschreibung": "Programmiersprache, die sich auf Lesbarkeit und einfache Syntax konzentriert.",
+      "niveau": 85
+    },
+    "java": {
+      "beschreibung": "Programmiersprache, die für plattformübergreifende Anwendungen entwickelt wurde.",
+      "niveau": 80
+    }
+  
+}

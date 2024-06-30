@@ -1,9 +1,8 @@
 //import styles from '/css/components/views/Home.module.scss';
-import styles from '/css/components/about/SkillIconContainer.module.scss'
+import styles from '/css/components/about/skills/SkillIconContainer.module.scss'
 import PropTypes from 'prop-types'
 
-import SkillIcon from './SkillIcon';
-import { useEffect } from 'react';
+import SkillIcon from '/about/skills/SkillIcon';
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -16,7 +15,7 @@ SkillIconContainer.propTypes = {
 export default function SkillIconContainer({icons, black}) {
 
     const renderIcons = icons.map((url) => (
-      <SkillIcon black={black} key={uuidv4()} url={url} />
+      <SkillIcon black={black} key={uuidv4()} src={url} />
     ));
 
   return (
